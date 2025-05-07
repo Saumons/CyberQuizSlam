@@ -71,7 +71,7 @@
             button_entrer_quiz.Name = "button_entrer_quiz";
             button_entrer_quiz.Size = new Size(437, 95);
             button_entrer_quiz.TabIndex = 2;
-            button_entrer_quiz.Text = "Entrer dans le quiz";
+            button_entrer_quiz.Text = "ENTRE DANS LE QUIIIIIZZZZ";
             button_entrer_quiz.UseVisualStyleBackColor = true;
             // 
             // textbox_pseudo
