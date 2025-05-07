@@ -133,6 +133,16 @@ namespace CyberQuizz_App.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap logo_App_1 {
+            get {
+                object obj = ResourceManager.GetObject("logo_App_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap prof_doigt_lever {
             get {
                 object obj = ResourceManager.GetObject("prof_doigt_lever", resourceCulture);

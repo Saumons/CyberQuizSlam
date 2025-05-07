@@ -123,6 +123,9 @@
             // 
             // pictureBox2
             // 
+            pictureBox2.BackColor = Color.Transparent;
+            pictureBox2.BackgroundImage = CyberQuizz_App.Properties.Resources.logo_App_1;
+            pictureBox2.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox2.Location = new Point(189, 152);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(295, 258);
@@ -135,7 +138,7 @@
             AutoScaleMode = AutoScaleMode.Dpi;
             BackgroundImage = WinFormsApp1.Properties.Resources.fond;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(671, 823);
+            ClientSize = new Size(667, 819);
             ControlBox = false;
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
