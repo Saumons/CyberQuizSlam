@@ -45,7 +45,7 @@
             // 
             button_quitter.BackgroundImageLayout = ImageLayout.Stretch;
             button_quitter.FlatStyle = FlatStyle.Popup;
-            button_quitter.Location = new Point(535, 750);
+            button_quitter.Location = new Point(515, 750);
             button_quitter.Name = "button_quitter";
             button_quitter.Size = new Size(136, 73);
             button_quitter.TabIndex = 0;
@@ -136,9 +136,9 @@
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
             AutoScaleMode = AutoScaleMode.Dpi;
-            BackgroundImage = WinFormsApp1.Properties.Resources.fond;
+            BackgroundImage = CyberQuizz_App.Properties.Resources.fond;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(667, 819);
+            ClientSize = new Size(663, 835);
             ControlBox = false;
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
