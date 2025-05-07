@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CyberQuiz_Lib", "CyberQuiz_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CyberQuiz_App", "E:\1SIO\Semestre_2\SLAM\TP_fin\CyberQuiz_App\CyberQuiz_App\CyberQuiz_App.csproj", "{2F6BE37B-814D-354F-D10A-F42F880D2505}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsApp1", "WinFormsApp1\WinFormsApp1.csproj", "{36266023-7FD1-4BAD-91C8-486E14A26CE3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CyberQuizz_App", "WinFormsApp1\CyberQuizz_App.csproj", "{36266023-7FD1-4BAD-91C8-486E14A26CE3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
