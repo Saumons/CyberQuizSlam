@@ -65,14 +65,17 @@
             // 
             // button_entrer_quiz
             // 
+            button_entrer_quiz.BackColor = Color.Transparent;
+            button_entrer_quiz.BackgroundImage = CyberQuizz_App.Properties.Resources.btn_rose;
+            button_entrer_quiz.BackgroundImageLayout = ImageLayout.Stretch;
             button_entrer_quiz.FlatStyle = FlatStyle.Popup;
             button_entrer_quiz.Font = new Font("Caladea", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button_entrer_quiz.Location = new Point(118, 626);
             button_entrer_quiz.Name = "button_entrer_quiz";
             button_entrer_quiz.Size = new Size(437, 95);
             button_entrer_quiz.TabIndex = 2;
-            button_entrer_quiz.Text = "ENTRE DANS LE QUIIIIIZZZZ";
-            button_entrer_quiz.UseVisualStyleBackColor = true;
+            button_entrer_quiz.Text = "Entrer dans le quiz";
+            button_entrer_quiz.UseVisualStyleBackColor = false;
             // 
             // textbox_pseudo
             // 
