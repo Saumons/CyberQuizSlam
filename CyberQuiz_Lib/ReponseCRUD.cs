@@ -9,7 +9,7 @@ namespace CyberQuiz_Lib
     /// <summary>
     /// 
     /// </summary>
-    public class QuizCRUD
+    public class ReponseCRUD
     {
 
         #region Propriétés
@@ -63,7 +63,7 @@ namespace CyberQuiz_Lib
         /// </summary>
         /// <param name="libelle">libellé de la question</param>
         /// <param name="numero">numéro de la question</param>
-        public Reponse(String libelle, int numero)
+        public ReponseCRUD(String libelle, int numero)
         {
             _libelle = libelle;
             _numero = numero;
