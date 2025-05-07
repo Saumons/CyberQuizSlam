@@ -1,7 +1,7 @@
 ﻿namespace CyberQuiz_Lib
 {
 	/// <summary>
-	/// 
+	/// Représente un réponse
 	/// </summary>
     public class Reponse
     {

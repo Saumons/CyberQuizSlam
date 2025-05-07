@@ -13,13 +13,44 @@ namespace CyberQuiz_Lib
     {
         #region Propriétés
 
-       
+        private List<Question> _questions;
+        private String _joueur;
+        private String _theme;
+        private String _difficulte;
+
+        public String Difficulte
+        {
+            get { return _difficulte; }
+            set { _difficulte = value; }
+        }
+
+
+        public String Theme
+        {
+            get { return _theme; }
+            set { _theme = value; }
+        }
+
+
+        public String Joueur
+        {
+            get { return _joueur; }
+            set { _joueur = value; }
+        }
+
+
+        public List<Question> Question
+        {
+            get { return _questions; }
+            set { _questions = value; }
+        }
+
 
         #endregion
 
         #region Property
 
-        
+
 
         #endregion
 
@@ -31,9 +62,9 @@ namespace CyberQuiz_Lib
         /// </summary>
         /// <param name="libelle">libellé de la question</param>
         /// <param name="numero">numéro de la question</param>
-        public Quiz(String libelle, int numero)
+        public QuestionCRUD(String libelle, int numero)
         {
-           
+
         }
 
 
