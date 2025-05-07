@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace CyberQuiz_Lib
 {
     /// <summary>
-    /// 
+    /// Représente le lien entre la table Question et le code
     /// </summary>
     public class ReponseCRUD
     {
@@ -65,8 +65,7 @@ namespace CyberQuiz_Lib
         /// <param name="numero">numéro de la question</param>
         public ReponseCRUD(String libelle, int numero)
         {
-            _libelle = libelle;
-            _numero = numero;
+            
         }
 
 

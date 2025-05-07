@@ -63,10 +63,9 @@ namespace CyberQuiz_Lib
         /// </summary>
         /// <param name="libelle">libellé de la question</param>
         /// <param name="numero">numéro de la question</param>
-        public Reponse(String libelle, int numero)
+        public QuestionCRUD(String libelle, int numero)
         {
-            _libelle = libelle;
-            _numero = numero;
+           
         }
 
 
