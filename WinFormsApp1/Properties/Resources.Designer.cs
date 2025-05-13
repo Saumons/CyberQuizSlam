@@ -123,6 +123,36 @@ namespace CyberQuizz_App.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bulle_grande {
+            get {
+                object obj = ResourceManager.GetObject("bulle_grande", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bulle_petite {
+            get {
+                object obj = ResourceManager.GetObject("bulle_petite", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bulle_petite_fleche {
+            get {
+                object obj = ResourceManager.GetObject("bulle_petite_fleche", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fond {
             get {
                 object obj = ResourceManager.GetObject("fond", resourceCulture);
@@ -136,6 +166,86 @@ namespace CyberQuizz_App.Properties {
         internal static System.Drawing.Bitmap logo_App_1 {
             get {
                 object obj = ResourceManager.GetObject("logo_App_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mauvaiseReponseA {
+            get {
+                object obj = ResourceManager.GetObject("mauvaiseReponseA", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mauvaiseReponseB {
+            get {
+                object obj = ResourceManager.GetObject("mauvaiseReponseB", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mauvaiseReponseC {
+            get {
+                object obj = ResourceManager.GetObject("mauvaiseReponseC", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mauvaiseReponseD {
+            get {
+                object obj = ResourceManager.GetObject("mauvaiseReponseD", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pictoFermer {
+            get {
+                object obj = ResourceManager.GetObject("pictoFermer", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pictoMenu {
+            get {
+                object obj = ResourceManager.GetObject("pictoMenu", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pictoProfile {
+            get {
+                object obj = ResourceManager.GetObject("pictoProfile", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pictoQuitter {
+            get {
+                object obj = ResourceManager.GetObject("pictoQuitter", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -176,6 +286,136 @@ namespace CyberQuizz_App.Properties {
         internal static System.Drawing.Bitmap prof_pouce_lever {
             get {
                 object obj = ResourceManager.GetObject("prof_pouce_lever", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Professeur_torse {
+            get {
+                object obj = ResourceManager.GetObject("Professeur_torse", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap reponseCorrectA {
+            get {
+                object obj = ResourceManager.GetObject("reponseCorrectA", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap reponseCorrectB {
+            get {
+                object obj = ResourceManager.GetObject("reponseCorrectB", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap reponseCorrectC {
+            get {
+                object obj = ResourceManager.GetObject("reponseCorrectC", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap reponseCorrectD {
+            get {
+                object obj = ResourceManager.GetObject("reponseCorrectD", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap reponseFauxA {
+            get {
+                object obj = ResourceManager.GetObject("reponseFauxA", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap reponseFauxB {
+            get {
+                object obj = ResourceManager.GetObject("reponseFauxB", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap reponseFauxC {
+            get {
+                object obj = ResourceManager.GetObject("reponseFauxC", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap reponseFauxD {
+            get {
+                object obj = ResourceManager.GetObject("reponseFauxD", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap reponseQuizzA {
+            get {
+                object obj = ResourceManager.GetObject("reponseQuizzA", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap reponseQuizzB {
+            get {
+                object obj = ResourceManager.GetObject("reponseQuizzB", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap reponseQuizzC {
+            get {
+                object obj = ResourceManager.GetObject("reponseQuizzC", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap reponseQuizzD {
+            get {
+                object obj = ResourceManager.GetObject("reponseQuizzD", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
