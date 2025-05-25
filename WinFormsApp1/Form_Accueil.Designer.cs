@@ -43,25 +43,28 @@
             // 
             // button_quitter
             // 
+            button_quitter.BackColor = Color.Transparent;
+            button_quitter.BackgroundImage = CyberQuizz_App.Properties.Resources.pictoQuitter;
             button_quitter.BackgroundImageLayout = ImageLayout.Stretch;
             button_quitter.FlatStyle = FlatStyle.Popup;
-            button_quitter.Location = new Point(515, 750);
+            button_quitter.Location = new Point(587, 763);
             button_quitter.Name = "button_quitter";
-            button_quitter.Size = new Size(136, 73);
-            button_quitter.TabIndex = 0;
-            button_quitter.Text = "QUITTER";
-            button_quitter.UseVisualStyleBackColor = true;
+            button_quitter.Size = new Size(60, 60);
+            button_quitter.TabIndex = 3;
+            button_quitter.UseVisualStyleBackColor = false;
             button_quitter.Click += button_quitter_Click;
             // 
             // button_admin
             // 
+            button_admin.BackColor = Color.Transparent;
+            button_admin.BackgroundImage = CyberQuizz_App.Properties.Resources.pictoProfile;
+            button_admin.BackgroundImageLayout = ImageLayout.Stretch;
             button_admin.FlatStyle = FlatStyle.Popup;
-            button_admin.Location = new Point(12, 750);
+            button_admin.Location = new Point(12, 763);
             button_admin.Name = "button_admin";
-            button_admin.Size = new Size(136, 73);
-            button_admin.TabIndex = 1;
-            button_admin.Text = "Compte Admin";
-            button_admin.UseVisualStyleBackColor = true;
+            button_admin.Size = new Size(60, 60);
+            button_admin.TabIndex = 2;
+            button_admin.UseVisualStyleBackColor = false;
             // 
             // button_entrer_quiz
             // 
@@ -73,17 +76,19 @@
             button_entrer_quiz.Location = new Point(118, 626);
             button_entrer_quiz.Name = "button_entrer_quiz";
             button_entrer_quiz.Size = new Size(437, 95);
-            button_entrer_quiz.TabIndex = 2;
+            button_entrer_quiz.TabIndex = 1;
             button_entrer_quiz.Text = "Entrer dans le quiz";
             button_entrer_quiz.UseVisualStyleBackColor = false;
+            button_entrer_quiz.Click += button_entrer_quiz_Click;
             // 
             // textbox_pseudo
             // 
             textbox_pseudo.Location = new Point(118, 512);
+            textbox_pseudo.MaxLength = 30;
             textbox_pseudo.Name = "textbox_pseudo";
             textbox_pseudo.PlaceholderText = "Entrez votre pseudo";
             textbox_pseudo.Size = new Size(437, 30);
-            textbox_pseudo.TabIndex = 3;
+            textbox_pseudo.TabIndex = 0;
             // 
             // label1
             // 
@@ -141,7 +146,7 @@
             AutoScaleMode = AutoScaleMode.Dpi;
             BackgroundImage = CyberQuizz_App.Properties.Resources.fond;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(663, 835);
+            ClientSize = new Size(655, 827);
             ControlBox = false;
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);

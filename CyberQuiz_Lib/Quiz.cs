@@ -62,10 +62,10 @@ namespace CyberQuiz_Lib
         /// </summary>
         /// <param name="libelle">libellé de la question</param>
         /// <param name="numero">numéro de la question</param>
-        public QuestionCRUD(String libelle, int numero)
-        {
-
-        }
+        //public QuestionCRUD(String libelle, int numero)
+        //{
+            // Je met en com, j'ai eu des erreurs, je te laisserais le faire assez vite :)
+        //}
 
 
         #endregion

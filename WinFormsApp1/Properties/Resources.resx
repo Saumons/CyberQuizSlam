@@ -118,17 +118,47 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="mauvaiseReponseC" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mauvaiseReponseC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="reponseQuizzB" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reponseQuizzB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mauvaiseReponseA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mauvaiseReponseA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="logo_App_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo_App_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="prof_mains-hanches" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\prof_mains-hanches.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pictoFermer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pictoFermer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="reponseCorrectC" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reponseCorrectC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_bleu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_bleu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bulle_petite_fleche" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bulle_petite_fleche.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pictoQuitter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pictoQuitter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="reponseCorrectA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reponseCorrectA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="prof_pouce_lever" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\prof_pouce_lever.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="prof_echec" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\prof_echec.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="reponseQuizzC" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reponseQuizzC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="reponseFauxD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reponseFauxD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="prof_mains-hanches" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\prof_mains-hanches.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="btn_rose" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btn_rose.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -136,94 +166,70 @@
   <data name="prof_doigt_lever" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\prof_doigt_lever.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="btn_jaune" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btn_jaune.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="reponseFauxA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reponseFauxA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fond" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fond.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btn_vert" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btn_vert.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btn_rouge" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btn_rouge.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btn_orange" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btn_orange.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btn_bleu" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btn_bleu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bulle_grande" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bulle_grande.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bulle_petite" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bulle_petite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bulle_petite_fleche" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bulle_petite_fleche.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mauvaiseReponseA" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mauvaiseReponseA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mauvaiseReponseB" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mauvaiseReponseB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mauvaiseReponseC" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mauvaiseReponseC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mauvaiseReponseD" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mauvaiseReponseD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pictoFermer" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pictoFermer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pictoMenu" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pictoMenu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pictoProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pictoProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pictoQuitter" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pictoQuitter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="prof_echec" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\prof_echec.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Professeur_torse" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Professeur_torse.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="reponseCorrectA" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\reponseCorrectA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="reponseFauxB" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reponseFauxB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="reponseCorrectB" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\reponseCorrectB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="reponseCorrectC" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\reponseCorrectC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pictoProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pictoProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="reponseCorrectD" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\reponseCorrectD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="reponseFauxA" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\reponseFauxA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="reponseQuizzA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reponseQuizzA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="reponseFauxB" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\reponseFauxB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="reponseCorrectB" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reponseCorrectB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bulle_petite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bulle_petite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pictoMenu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pictoMenu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mauvaiseReponseB" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mauvaiseReponseB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fond" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fond.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_orange" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_orange.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mauvaiseReponseD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mauvaiseReponseD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_vert" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_vert.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="retour" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\retour.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_jaune" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_jaune.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="reponseFauxC" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\reponseFauxC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="reponseFauxD" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\reponseFauxD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="reponseQuizzA" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\reponseQuizzA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="reponseQuizzB" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\reponseQuizzB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="reponseQuizzC" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\reponseQuizzC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bulle_grande" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bulle_grande.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="reponseQuizzD" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\reponseQuizzD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_rouge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_rouge.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="retour1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\retour1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
