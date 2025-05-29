@@ -16,5 +16,15 @@ namespace CyberQuizz_App
         {
             InitializeComponent();
         }
+
+        private void button_quitter_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button_a_Click(object sender, EventArgs e)
+        {
+            button_a.Text = "Comment s'appelle l'attaque consistant à avoir un homme entre les deux PC des gens ?";
+        }
     }
 }

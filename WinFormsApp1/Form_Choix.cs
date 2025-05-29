@@ -21,5 +21,11 @@ namespace CyberQuizz_App
         {
             Application.Exit();
         }
+
+        private void button_lancer_Click(object sender, EventArgs e)
+        {
+            Form_Jeu uneFenetre = new Form_Jeu();
+            uneFenetre.ShowDialog();
+        }
     }
 }

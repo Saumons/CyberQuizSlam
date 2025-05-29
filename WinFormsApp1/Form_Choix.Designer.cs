@@ -50,7 +50,10 @@
             button_quitter.BackColor = Color.Transparent;
             button_quitter.BackgroundImage = Properties.Resources.pictoQuitter;
             button_quitter.BackgroundImageLayout = ImageLayout.Stretch;
-            button_quitter.FlatStyle = FlatStyle.Popup;
+            button_quitter.Cursor = Cursors.Hand;
+            button_quitter.FlatAppearance.BorderSize = 0;
+            button_quitter.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            button_quitter.FlatStyle = FlatStyle.Flat;
             button_quitter.Location = new Point(1012, 759);
             button_quitter.Name = "button_quitter";
             button_quitter.Size = new Size(60, 60);
@@ -64,7 +67,7 @@
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Caladea", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.Black;
-            label3.Location = new Point(405, 9);
+            label3.Location = new Point(395, 12);
             label3.Name = "label3";
             label3.Size = new Size(269, 43);
             label3.TabIndex = 7;
@@ -74,7 +77,10 @@
             // 
             button_facile.BackColor = Color.Transparent;
             button_facile.BackgroundImage = Properties.Resources.btn_vert;
-            button_facile.FlatStyle = FlatStyle.Popup;
+            button_facile.Cursor = Cursors.Hand;
+            button_facile.FlatAppearance.BorderSize = 0;
+            button_facile.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            button_facile.FlatStyle = FlatStyle.Flat;
             button_facile.Font = new Font("Caladea", 17.9999981F);
             button_facile.Location = new Point(65, 261);
             button_facile.Name = "button_facile";
@@ -88,7 +94,10 @@
             button_retour.BackColor = Color.Transparent;
             button_retour.BackgroundImage = Properties.Resources.retour_btn;
             button_retour.BackgroundImageLayout = ImageLayout.Stretch;
-            button_retour.FlatStyle = FlatStyle.Popup;
+            button_retour.Cursor = Cursors.Hand;
+            button_retour.FlatAppearance.BorderSize = 0;
+            button_retour.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            button_retour.FlatStyle = FlatStyle.Flat;
             button_retour.Location = new Point(-5, 740);
             button_retour.Name = "button_retour";
             button_retour.Size = new Size(98, 98);
@@ -99,7 +108,10 @@
             // 
             button_moyen.BackColor = Color.Transparent;
             button_moyen.BackgroundImage = Properties.Resources.btn_orange;
-            button_moyen.FlatStyle = FlatStyle.Popup;
+            button_moyen.Cursor = Cursors.Hand;
+            button_moyen.FlatAppearance.BorderSize = 0;
+            button_moyen.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            button_moyen.FlatStyle = FlatStyle.Flat;
             button_moyen.Font = new Font("Caladea", 17.9999981F);
             button_moyen.Location = new Point(410, 261);
             button_moyen.Name = "button_moyen";
@@ -112,7 +124,10 @@
             // 
             button_difficile.BackColor = Color.Transparent;
             button_difficile.BackgroundImage = Properties.Resources.btn_rouge;
-            button_difficile.FlatStyle = FlatStyle.Popup;
+            button_difficile.Cursor = Cursors.Hand;
+            button_difficile.FlatAppearance.BorderSize = 0;
+            button_difficile.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            button_difficile.FlatStyle = FlatStyle.Flat;
             button_difficile.Font = new Font("Caladea", 17.9999981F);
             button_difficile.Location = new Point(753, 261);
             button_difficile.Name = "button_difficile";
@@ -125,7 +140,10 @@
             // 
             button_entreprise.BackColor = Color.Transparent;
             button_entreprise.BackgroundImage = Properties.Resources.btn_bleu;
-            button_entreprise.FlatStyle = FlatStyle.Popup;
+            button_entreprise.Cursor = Cursors.Hand;
+            button_entreprise.FlatAppearance.BorderSize = 0;
+            button_entreprise.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            button_entreprise.FlatStyle = FlatStyle.Flat;
             button_entreprise.Font = new Font("Caladea", 17.9999981F);
             button_entreprise.Location = new Point(65, 545);
             button_entreprise.Name = "button_entreprise";
@@ -138,7 +156,10 @@
             // 
             button_reseaux_harcelement.BackColor = Color.Transparent;
             button_reseaux_harcelement.BackgroundImage = Properties.Resources.btn_bleu;
-            button_reseaux_harcelement.FlatStyle = FlatStyle.Popup;
+            button_reseaux_harcelement.Cursor = Cursors.Hand;
+            button_reseaux_harcelement.FlatAppearance.BorderSize = 0;
+            button_reseaux_harcelement.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            button_reseaux_harcelement.FlatStyle = FlatStyle.Flat;
             button_reseaux_harcelement.Font = new Font("Caladea", 17.9999981F);
             button_reseaux_harcelement.Location = new Point(410, 545);
             button_reseaux_harcelement.Name = "button_reseaux_harcelement";
@@ -151,7 +172,10 @@
             // 
             button_culture_mdp.BackColor = Color.Transparent;
             button_culture_mdp.BackgroundImage = Properties.Resources.btn_bleu;
-            button_culture_mdp.FlatStyle = FlatStyle.Popup;
+            button_culture_mdp.Cursor = Cursors.Hand;
+            button_culture_mdp.FlatAppearance.BorderSize = 0;
+            button_culture_mdp.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            button_culture_mdp.FlatStyle = FlatStyle.Flat;
             button_culture_mdp.Font = new Font("Caladea", 17.9999981F);
             button_culture_mdp.Location = new Point(753, 545);
             button_culture_mdp.Name = "button_culture_mdp";
@@ -197,6 +221,9 @@
             // 
             // button_lancer
             // 
+            button_lancer.FlatAppearance.BorderSize = 0;
+            button_lancer.FlatAppearance.MouseOverBackColor = Color.White;
+            button_lancer.FlatStyle = FlatStyle.Flat;
             button_lancer.Font = new Font("Caladea", 17.9999981F);
             button_lancer.Location = new Point(410, 721);
             button_lancer.Name = "button_lancer";
@@ -204,13 +231,17 @@
             button_lancer.TabIndex = 18;
             button_lancer.Text = "Lancer le jeu";
             button_lancer.UseVisualStyleBackColor = true;
+            button_lancer.Click += button_lancer_Click;
             // 
             // button_regles
             // 
             button_regles.BackColor = Color.Transparent;
             button_regles.BackgroundImage = Properties.Resources.regles;
             button_regles.BackgroundImageLayout = ImageLayout.Stretch;
-            button_regles.FlatStyle = FlatStyle.Popup;
+            button_regles.Cursor = Cursors.Hand;
+            button_regles.FlatAppearance.BorderSize = 0;
+            button_regles.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            button_regles.FlatStyle = FlatStyle.Flat;
             button_regles.Location = new Point(979, 12);
             button_regles.Name = "button_regles";
             button_regles.Size = new Size(90, 90);
@@ -240,6 +271,7 @@
             Controls.Add(label3);
             Controls.Add(button_quitter);
             Font = new Font("Caladea", 14.25F);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "Form_Choix";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "SLAM";
