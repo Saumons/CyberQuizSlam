@@ -104,6 +104,7 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
             label2.Font = new Font("Caladea", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.Location = new Point(189, 9);
             label2.Name = "label2";
@@ -114,6 +115,7 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
             label3.Font = new Font("Caladea", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.Location = new Point(240, 80);
             label3.Name = "label3";
@@ -123,6 +125,9 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.BackColor = Color.Transparent;
+            pictureBox1.BackgroundImage = CyberQuizz_App.Properties.Resources.SLAM_3;
+            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox1.Location = new Point(12, 12);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(140, 140);
@@ -146,7 +151,7 @@
             AutoScaleMode = AutoScaleMode.Dpi;
             BackgroundImage = CyberQuizz_App.Properties.Resources.fond;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(655, 827);
+            ClientSize = new Size(651, 823);
             ControlBox = false;
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);

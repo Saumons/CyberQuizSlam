@@ -303,6 +303,26 @@ namespace CyberQuizz_App.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap regles {
+            get {
+                object obj = ResourceManager.GetObject("regles", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap regles_btn {
+            get {
+                object obj = ResourceManager.GetObject("regles_btn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap reponseCorrectA {
             get {
                 object obj = ResourceManager.GetObject("reponseCorrectA", resourceCulture);
@@ -433,9 +453,19 @@ namespace CyberQuizz_App.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap retour1 {
+        internal static System.Drawing.Bitmap retour_btn {
             get {
-                object obj = ResourceManager.GetObject("retour1", resourceCulture);
+                object obj = ResourceManager.GetObject("retour_btn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SLAM_3 {
+            get {
+                object obj = ResourceManager.GetObject("SLAM_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -31,7 +31,7 @@
             button_quitter = new Button();
             label3 = new Label();
             button_facile = new Button();
-            button2 = new Button();
+            button_retour = new Button();
             button_moyen = new Button();
             button_difficile = new Button();
             button_entreprise = new Button();
@@ -40,7 +40,8 @@
             label_theme = new Label();
             label1 = new Label();
             pictureBox1 = new PictureBox();
-            button1 = new Button();
+            button_lancer = new Button();
+            button_regles = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -60,10 +61,12 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Caladea", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(446, 9);
+            label3.BackColor = Color.Transparent;
+            label3.Font = new Font("Caladea", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.ForeColor = Color.Black;
+            label3.Location = new Point(405, 9);
             label3.Name = "label3";
-            label3.Size = new Size(187, 32);
+            label3.Size = new Size(269, 43);
             label3.TabIndex = 7;
             label3.Text = "AskMeIfYouCan";
             // 
@@ -73,24 +76,24 @@
             button_facile.BackgroundImage = Properties.Resources.btn_vert;
             button_facile.FlatStyle = FlatStyle.Popup;
             button_facile.Font = new Font("Caladea", 17.9999981F);
-            button_facile.Location = new Point(65, 208);
+            button_facile.Location = new Point(65, 261);
             button_facile.Name = "button_facile";
             button_facile.Size = new Size(264, 87);
             button_facile.TabIndex = 8;
             button_facile.Text = "Facile";
             button_facile.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // button_retour
             // 
-            button2.BackColor = Color.Transparent;
-            button2.BackgroundImage = Properties.Resources.pictoMenu;
-            button2.BackgroundImageLayout = ImageLayout.Stretch;
-            button2.FlatStyle = FlatStyle.Popup;
-            button2.Location = new Point(12, 759);
-            button2.Name = "button2";
-            button2.Size = new Size(60, 60);
-            button2.TabIndex = 9;
-            button2.UseVisualStyleBackColor = false;
+            button_retour.BackColor = Color.Transparent;
+            button_retour.BackgroundImage = Properties.Resources.retour_btn;
+            button_retour.BackgroundImageLayout = ImageLayout.Stretch;
+            button_retour.FlatStyle = FlatStyle.Popup;
+            button_retour.Location = new Point(-5, 740);
+            button_retour.Name = "button_retour";
+            button_retour.Size = new Size(98, 98);
+            button_retour.TabIndex = 9;
+            button_retour.UseVisualStyleBackColor = false;
             // 
             // button_moyen
             // 
@@ -98,7 +101,7 @@
             button_moyen.BackgroundImage = Properties.Resources.btn_orange;
             button_moyen.FlatStyle = FlatStyle.Popup;
             button_moyen.Font = new Font("Caladea", 17.9999981F);
-            button_moyen.Location = new Point(410, 208);
+            button_moyen.Location = new Point(410, 261);
             button_moyen.Name = "button_moyen";
             button_moyen.Size = new Size(264, 87);
             button_moyen.TabIndex = 10;
@@ -111,7 +114,7 @@
             button_difficile.BackgroundImage = Properties.Resources.btn_rouge;
             button_difficile.FlatStyle = FlatStyle.Popup;
             button_difficile.Font = new Font("Caladea", 17.9999981F);
-            button_difficile.Location = new Point(753, 208);
+            button_difficile.Location = new Point(753, 261);
             button_difficile.Name = "button_difficile";
             button_difficile.Size = new Size(264, 87);
             button_difficile.TabIndex = 11;
@@ -161,11 +164,11 @@
             // 
             label_theme.AutoSize = true;
             label_theme.BackColor = Color.Transparent;
-            label_theme.Font = new Font("Caladea", 17.9999981F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label_theme.ForeColor = SystemColors.ControlText;
-            label_theme.Location = new Point(501, 478);
+            label_theme.Font = new Font("Caladea", 21.75F, FontStyle.Bold);
+            label_theme.ForeColor = Color.White;
+            label_theme.Location = new Point(495, 479);
             label_theme.Name = "label_theme";
-            label_theme.Size = new Size(85, 28);
+            label_theme.Size = new Size(101, 34);
             label_theme.TabIndex = 15;
             label_theme.Text = "Thème";
             // 
@@ -173,11 +176,11 @@
             // 
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Caladea", 17.9999981F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = SystemColors.ControlText;
-            label1.Location = new Point(484, 127);
+            label1.Font = new Font("Caladea", 21.75F, FontStyle.Bold);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(478, 181);
             label1.Name = "label1";
-            label1.Size = new Size(114, 28);
+            label1.Size = new Size(136, 34);
             label1.TabIndex = 16;
             label1.Text = "Difficulté";
             // 
@@ -192,15 +195,27 @@
             pictureBox1.TabIndex = 17;
             pictureBox1.TabStop = false;
             // 
-            // button1
+            // button_lancer
             // 
-            button1.Font = new Font("Caladea", 17.9999981F);
-            button1.Location = new Point(410, 721);
-            button1.Name = "button1";
-            button1.Size = new Size(264, 86);
-            button1.TabIndex = 18;
-            button1.Text = "Lancer le jeu";
-            button1.UseVisualStyleBackColor = true;
+            button_lancer.Font = new Font("Caladea", 17.9999981F);
+            button_lancer.Location = new Point(410, 721);
+            button_lancer.Name = "button_lancer";
+            button_lancer.Size = new Size(264, 86);
+            button_lancer.TabIndex = 18;
+            button_lancer.Text = "Lancer le jeu";
+            button_lancer.UseVisualStyleBackColor = true;
+            // 
+            // button_regles
+            // 
+            button_regles.BackColor = Color.Transparent;
+            button_regles.BackgroundImage = Properties.Resources.regles;
+            button_regles.BackgroundImageLayout = ImageLayout.Stretch;
+            button_regles.FlatStyle = FlatStyle.Popup;
+            button_regles.Location = new Point(979, 12);
+            button_regles.Name = "button_regles";
+            button_regles.Size = new Size(90, 90);
+            button_regles.TabIndex = 19;
+            button_regles.UseVisualStyleBackColor = false;
             // 
             // Form_Choix
             // 
@@ -210,7 +225,8 @@
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1084, 831);
             ControlBox = false;
-            Controls.Add(button1);
+            Controls.Add(button_regles);
+            Controls.Add(button_lancer);
             Controls.Add(pictureBox1);
             Controls.Add(label1);
             Controls.Add(label_theme);
@@ -219,7 +235,7 @@
             Controls.Add(button_entreprise);
             Controls.Add(button_difficile);
             Controls.Add(button_moyen);
-            Controls.Add(button2);
+            Controls.Add(button_retour);
             Controls.Add(button_facile);
             Controls.Add(label3);
             Controls.Add(button_quitter);
@@ -237,7 +253,7 @@
         private Button button_quitter;
         private Label label3;
         private Button button_facile;
-        private Button button2;
+        private Button button_retour;
         private Button button_moyen;
         private Button button_difficile;
         private Button button_entreprise;
@@ -246,6 +262,7 @@
         private Label label_theme;
         private Label label1;
         private PictureBox pictureBox1;
-        private Button button1;
+        private Button button_lancer;
+        private Button button_regles;
     }
 }

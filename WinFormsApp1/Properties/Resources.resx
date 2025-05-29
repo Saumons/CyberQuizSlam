@@ -127,8 +127,11 @@
   <data name="mauvaiseReponseA" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mauvaiseReponseA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="logo_App_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logo_App_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="SLAM_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SLAM_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="retour_btn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\retour_btn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pictoFermer" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pictoFermer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -174,6 +177,12 @@
   </data>
   <data name="Professeur_torse" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Professeur_torse.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="regles" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\regles.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo_App_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo_App_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="reponseFauxB" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\reponseFauxB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -229,7 +238,7 @@
   <data name="btn_rouge" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btn_rouge.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="retour1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\retour1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="regles_btn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\regles_btn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
