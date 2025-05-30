@@ -17,6 +17,14 @@ namespace CyberQuiz_Lib
         private String _joueur;
         private String _theme;
         private String _difficulte;
+        private int _nbQuestions;
+
+        public int NbQuestions
+        {
+            get { return _nbQuestions; }
+            set { _nbQuestions = value; }
+        }
+
 
         public String Difficulte
         {
@@ -62,10 +70,10 @@ namespace CyberQuiz_Lib
         /// </summary>
         /// <param name="libelle">libellé de la question</param>
         /// <param name="numero">numéro de la question</param>
-        //public QuestionCRUD(String libelle, int numero)
-        //{
-            // Je met en com, j'ai eu des erreurs, je te laisserais le faire assez vite :)
-        //}
+        public Quiz(String joueur, String theme, String difficulte)
+        {
+            
+        }
 
 
         #endregion

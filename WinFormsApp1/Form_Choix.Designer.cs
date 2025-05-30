@@ -52,6 +52,7 @@
             button_quitter.BackgroundImageLayout = ImageLayout.Stretch;
             button_quitter.Cursor = Cursors.Hand;
             button_quitter.FlatAppearance.BorderSize = 0;
+            button_quitter.FlatAppearance.MouseDownBackColor = Color.Transparent;
             button_quitter.FlatAppearance.MouseOverBackColor = Color.Transparent;
             button_quitter.FlatStyle = FlatStyle.Flat;
             button_quitter.Location = new Point(1012, 759);
@@ -78,7 +79,9 @@
             button_facile.BackColor = Color.Transparent;
             button_facile.BackgroundImage = Properties.Resources.btn_vert;
             button_facile.Cursor = Cursors.Hand;
+            button_facile.FlatAppearance.BorderColor = Color.Black;
             button_facile.FlatAppearance.BorderSize = 0;
+            button_facile.FlatAppearance.MouseDownBackColor = Color.Transparent;
             button_facile.FlatAppearance.MouseOverBackColor = Color.Transparent;
             button_facile.FlatStyle = FlatStyle.Flat;
             button_facile.Font = new Font("Caladea", 17.9999981F);
@@ -86,8 +89,10 @@
             button_facile.Name = "button_facile";
             button_facile.Size = new Size(264, 87);
             button_facile.TabIndex = 8;
+            button_facile.Tag = "";
             button_facile.Text = "Facile";
             button_facile.UseVisualStyleBackColor = false;
+            button_facile.Click += button_facile_Click;
             // 
             // button_retour
             // 
@@ -96,6 +101,7 @@
             button_retour.BackgroundImageLayout = ImageLayout.Stretch;
             button_retour.Cursor = Cursors.Hand;
             button_retour.FlatAppearance.BorderSize = 0;
+            button_retour.FlatAppearance.MouseDownBackColor = Color.Transparent;
             button_retour.FlatAppearance.MouseOverBackColor = Color.Transparent;
             button_retour.FlatStyle = FlatStyle.Flat;
             button_retour.Location = new Point(-5, 740);
@@ -103,13 +109,16 @@
             button_retour.Size = new Size(98, 98);
             button_retour.TabIndex = 9;
             button_retour.UseVisualStyleBackColor = false;
+            button_retour.Click += button_retour_Click;
             // 
             // button_moyen
             // 
             button_moyen.BackColor = Color.Transparent;
             button_moyen.BackgroundImage = Properties.Resources.btn_orange;
             button_moyen.Cursor = Cursors.Hand;
+            button_moyen.FlatAppearance.BorderColor = Color.Black;
             button_moyen.FlatAppearance.BorderSize = 0;
+            button_moyen.FlatAppearance.MouseDownBackColor = Color.Transparent;
             button_moyen.FlatAppearance.MouseOverBackColor = Color.Transparent;
             button_moyen.FlatStyle = FlatStyle.Flat;
             button_moyen.Font = new Font("Caladea", 17.9999981F);
@@ -117,15 +126,19 @@
             button_moyen.Name = "button_moyen";
             button_moyen.Size = new Size(264, 87);
             button_moyen.TabIndex = 10;
+            button_moyen.Tag = "";
             button_moyen.Text = "Moyen";
             button_moyen.UseVisualStyleBackColor = false;
+            button_moyen.Click += button_facile_Click;
             // 
             // button_difficile
             // 
             button_difficile.BackColor = Color.Transparent;
             button_difficile.BackgroundImage = Properties.Resources.btn_rouge;
             button_difficile.Cursor = Cursors.Hand;
+            button_difficile.FlatAppearance.BorderColor = Color.Black;
             button_difficile.FlatAppearance.BorderSize = 0;
+            button_difficile.FlatAppearance.MouseDownBackColor = Color.Transparent;
             button_difficile.FlatAppearance.MouseOverBackColor = Color.Transparent;
             button_difficile.FlatStyle = FlatStyle.Flat;
             button_difficile.Font = new Font("Caladea", 17.9999981F);
@@ -133,15 +146,19 @@
             button_difficile.Name = "button_difficile";
             button_difficile.Size = new Size(264, 87);
             button_difficile.TabIndex = 11;
+            button_difficile.Tag = "";
             button_difficile.Text = "Difficile";
             button_difficile.UseVisualStyleBackColor = false;
+            button_difficile.Click += button_facile_Click;
             // 
             // button_entreprise
             // 
             button_entreprise.BackColor = Color.Transparent;
             button_entreprise.BackgroundImage = Properties.Resources.btn_bleu;
             button_entreprise.Cursor = Cursors.Hand;
+            button_entreprise.FlatAppearance.BorderColor = Color.Black;
             button_entreprise.FlatAppearance.BorderSize = 0;
+            button_entreprise.FlatAppearance.MouseDownBackColor = Color.Transparent;
             button_entreprise.FlatAppearance.MouseOverBackColor = Color.Transparent;
             button_entreprise.FlatStyle = FlatStyle.Flat;
             button_entreprise.Font = new Font("Caladea", 17.9999981F);
@@ -151,13 +168,16 @@
             button_entreprise.TabIndex = 12;
             button_entreprise.Text = "Entreprise";
             button_entreprise.UseVisualStyleBackColor = false;
+            button_entreprise.Click += button_entreprise_Click;
             // 
             // button_reseaux_harcelement
             // 
             button_reseaux_harcelement.BackColor = Color.Transparent;
             button_reseaux_harcelement.BackgroundImage = Properties.Resources.btn_bleu;
             button_reseaux_harcelement.Cursor = Cursors.Hand;
+            button_reseaux_harcelement.FlatAppearance.BorderColor = Color.Black;
             button_reseaux_harcelement.FlatAppearance.BorderSize = 0;
+            button_reseaux_harcelement.FlatAppearance.MouseDownBackColor = Color.Transparent;
             button_reseaux_harcelement.FlatAppearance.MouseOverBackColor = Color.Transparent;
             button_reseaux_harcelement.FlatStyle = FlatStyle.Flat;
             button_reseaux_harcelement.Font = new Font("Caladea", 17.9999981F);
@@ -167,13 +187,16 @@
             button_reseaux_harcelement.TabIndex = 13;
             button_reseaux_harcelement.Text = "Réseaux Sociaux\r\nCyber-Harcèlement";
             button_reseaux_harcelement.UseVisualStyleBackColor = false;
+            button_reseaux_harcelement.Click += button_entreprise_Click;
             // 
             // button_culture_mdp
             // 
             button_culture_mdp.BackColor = Color.Transparent;
             button_culture_mdp.BackgroundImage = Properties.Resources.btn_bleu;
             button_culture_mdp.Cursor = Cursors.Hand;
+            button_culture_mdp.FlatAppearance.BorderColor = Color.Black;
             button_culture_mdp.FlatAppearance.BorderSize = 0;
+            button_culture_mdp.FlatAppearance.MouseDownBackColor = Color.Transparent;
             button_culture_mdp.FlatAppearance.MouseOverBackColor = Color.Transparent;
             button_culture_mdp.FlatStyle = FlatStyle.Flat;
             button_culture_mdp.Font = new Font("Caladea", 17.9999981F);
@@ -183,6 +206,7 @@
             button_culture_mdp.TabIndex = 14;
             button_culture_mdp.Text = "Culture Cyber\r\nMots de passe";
             button_culture_mdp.UseVisualStyleBackColor = false;
+            button_culture_mdp.Click += button_entreprise_Click;
             // 
             // label_theme
             // 
@@ -240,6 +264,7 @@
             button_regles.BackgroundImageLayout = ImageLayout.Stretch;
             button_regles.Cursor = Cursors.Hand;
             button_regles.FlatAppearance.BorderSize = 0;
+            button_regles.FlatAppearance.MouseDownBackColor = Color.Transparent;
             button_regles.FlatAppearance.MouseOverBackColor = Color.Transparent;
             button_regles.FlatStyle = FlatStyle.Flat;
             button_regles.Location = new Point(979, 12);

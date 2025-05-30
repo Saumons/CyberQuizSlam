@@ -4,6 +4,7 @@ namespace CyberQuiz_App
 {
     public partial class Form_Accueil : Form
     {
+        string pseudo;
         public Form_Accueil()
         {
             InitializeComponent();
@@ -16,13 +17,11 @@ namespace CyberQuiz_App
 
         private void button_entrer_quiz_Click(object sender, EventArgs e)
         {
-            Form_Choix uneFenetre = new Form_Choix();
+            pseudo = textbox_pseudo.Text;
+
+            Form_Choix uneFenetre = new Form_Choix(pseudo);
             uneFenetre.ShowDialog();
         }
-
-        //             form_regles uneFenetre = new form_regles();
-        //             uneFenetre.ShowDialog();
-        // Pour les regles
 
     }
 }

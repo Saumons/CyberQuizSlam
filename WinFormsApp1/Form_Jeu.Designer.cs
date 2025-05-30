@@ -38,6 +38,9 @@
             button_c = new Button();
             button_d = new Button();
             label3 = new Label();
+            button_question = new Button();
+            label_question = new Label();
+            button_valider = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -59,6 +62,7 @@
             button_retour.BackgroundImageLayout = ImageLayout.Stretch;
             button_retour.Cursor = Cursors.Hand;
             button_retour.FlatAppearance.BorderSize = 0;
+            button_retour.FlatAppearance.MouseDownBackColor = Color.Transparent;
             button_retour.FlatAppearance.MouseOverBackColor = Color.Transparent;
             button_retour.FlatStyle = FlatStyle.Flat;
             button_retour.Location = new Point(-5, 740);
@@ -66,6 +70,7 @@
             button_retour.Size = new Size(98, 98);
             button_retour.TabIndex = 5;
             button_retour.UseVisualStyleBackColor = false;
+            button_retour.Click += button_retour_Click;
             // 
             // button_quitter
             // 
@@ -74,6 +79,7 @@
             button_quitter.BackgroundImageLayout = ImageLayout.Stretch;
             button_quitter.Cursor = Cursors.Hand;
             button_quitter.FlatAppearance.BorderSize = 0;
+            button_quitter.FlatAppearance.MouseDownBackColor = Color.Transparent;
             button_quitter.FlatAppearance.MouseOverBackColor = Color.Transparent;
             button_quitter.FlatStyle = FlatStyle.Flat;
             button_quitter.Location = new Point(1012, 759);
@@ -90,9 +96,10 @@
             button_prof.BackgroundImageLayout = ImageLayout.Stretch;
             button_prof.Cursor = Cursors.Hand;
             button_prof.FlatAppearance.BorderSize = 0;
+            button_prof.FlatAppearance.MouseDownBackColor = Color.Transparent;
             button_prof.FlatAppearance.MouseOverBackColor = Color.Transparent;
             button_prof.FlatStyle = FlatStyle.Flat;
-            button_prof.Location = new Point(875, 12);
+            button_prof.Location = new Point(875, 52);
             button_prof.Name = "button_prof";
             button_prof.Size = new Size(171, 318);
             button_prof.TabIndex = 7;
@@ -116,7 +123,9 @@
             button_a.BackgroundImage = Properties.Resources.reponseQuizzA;
             button_a.BackgroundImageLayout = ImageLayout.Stretch;
             button_a.Cursor = Cursors.Hand;
+            button_a.FlatAppearance.BorderColor = Color.Black;
             button_a.FlatAppearance.BorderSize = 0;
+            button_a.FlatAppearance.MouseDownBackColor = Color.Transparent;
             button_a.FlatAppearance.MouseOverBackColor = Color.Transparent;
             button_a.FlatStyle = FlatStyle.Flat;
             button_a.Location = new Point(51, 414);
@@ -133,6 +142,7 @@
             button_b.BackgroundImageLayout = ImageLayout.Stretch;
             button_b.Cursor = Cursors.Hand;
             button_b.FlatAppearance.BorderSize = 0;
+            button_b.FlatAppearance.MouseDownBackColor = Color.Transparent;
             button_b.FlatAppearance.MouseOverBackColor = Color.Transparent;
             button_b.FlatStyle = FlatStyle.Flat;
             button_b.Location = new Point(580, 414);
@@ -140,6 +150,7 @@
             button_b.Size = new Size(450, 95);
             button_b.TabIndex = 2;
             button_b.UseVisualStyleBackColor = false;
+            button_b.Click += button_a_Click;
             // 
             // button_c
             // 
@@ -148,6 +159,7 @@
             button_c.BackgroundImageLayout = ImageLayout.Stretch;
             button_c.Cursor = Cursors.Hand;
             button_c.FlatAppearance.BorderSize = 0;
+            button_c.FlatAppearance.MouseDownBackColor = Color.Transparent;
             button_c.FlatAppearance.MouseOverBackColor = Color.Transparent;
             button_c.FlatStyle = FlatStyle.Flat;
             button_c.Location = new Point(51, 560);
@@ -155,6 +167,7 @@
             button_c.Size = new Size(450, 95);
             button_c.TabIndex = 3;
             button_c.UseVisualStyleBackColor = false;
+            button_c.Click += button_a_Click;
             // 
             // button_d
             // 
@@ -163,6 +176,7 @@
             button_d.BackgroundImageLayout = ImageLayout.Stretch;
             button_d.Cursor = Cursors.Hand;
             button_d.FlatAppearance.BorderSize = 0;
+            button_d.FlatAppearance.MouseDownBackColor = Color.Transparent;
             button_d.FlatAppearance.MouseOverBackColor = Color.Transparent;
             button_d.FlatStyle = FlatStyle.Flat;
             button_d.Location = new Point(580, 560);
@@ -170,6 +184,7 @@
             button_d.Size = new Size(450, 95);
             button_d.TabIndex = 4;
             button_d.UseVisualStyleBackColor = false;
+            button_d.Click += button_a_Click;
             // 
             // label3
             // 
@@ -183,6 +198,47 @@
             label3.TabIndex = 28;
             label3.Text = "AskMeIfYouCan";
             // 
+            // button_question
+            // 
+            button_question.BackColor = Color.Transparent;
+            button_question.BackgroundImage = Properties.Resources.bulle_grande;
+            button_question.BackgroundImageLayout = ImageLayout.Stretch;
+            button_question.Cursor = Cursors.Hand;
+            button_question.FlatAppearance.BorderSize = 0;
+            button_question.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            button_question.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            button_question.FlatStyle = FlatStyle.Flat;
+            button_question.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button_question.Location = new Point(202, 71);
+            button_question.Name = "button_question";
+            button_question.Size = new Size(667, 198);
+            button_question.TabIndex = 29;
+            button_question.UseVisualStyleBackColor = false;
+            // 
+            // label_question
+            // 
+            label_question.BackColor = Color.FromArgb(252, 235, 243);
+            label_question.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label_question.Location = new Point(232, 99);
+            label_question.Name = "label_question";
+            label_question.Size = new Size(571, 143);
+            label_question.TabIndex = 30;
+            label_question.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // button_valider
+            // 
+            button_valider.FlatAppearance.BorderSize = 0;
+            button_valider.FlatAppearance.MouseOverBackColor = Color.White;
+            button_valider.FlatStyle = FlatStyle.Flat;
+            button_valider.Font = new Font("Caladea", 17.9999981F);
+            button_valider.Location = new Point(410, 721);
+            button_valider.Name = "button_valider";
+            button_valider.Size = new Size(264, 86);
+            button_valider.TabIndex = 32;
+            button_valider.Text = "Valider";
+            button_valider.UseVisualStyleBackColor = true;
+            button_valider.Click += button_valider_Click;
+            // 
             // Form_Jeu
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
@@ -191,6 +247,9 @@
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1084, 831);
             ControlBox = false;
+            Controls.Add(button_valider);
+            Controls.Add(label_question);
+            Controls.Add(button_question);
             Controls.Add(label3);
             Controls.Add(button_d);
             Controls.Add(button_c);
@@ -201,6 +260,7 @@
             Controls.Add(button_retour);
             Controls.Add(button_quitter);
             Controls.Add(pictureBox1);
+            Enabled = false;
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "Form_Jeu";
             StartPosition = FormStartPosition.CenterScreen;
@@ -222,5 +282,8 @@
         private Button button_c;
         private Button button_d;
         private Label label3;
+        private Button button_question;
+        private Label label_question;
+        private Button button_valider;
     }
 }

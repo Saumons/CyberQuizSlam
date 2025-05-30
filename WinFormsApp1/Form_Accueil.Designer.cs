@@ -48,9 +48,10 @@
             button_quitter.BackgroundImageLayout = ImageLayout.Stretch;
             button_quitter.Cursor = Cursors.Hand;
             button_quitter.FlatAppearance.BorderSize = 0;
+            button_quitter.FlatAppearance.MouseDownBackColor = Color.Transparent;
             button_quitter.FlatAppearance.MouseOverBackColor = Color.Transparent;
             button_quitter.FlatStyle = FlatStyle.Flat;
-            button_quitter.Location = new Point(577, 750);
+            button_quitter.Location = new Point(565, 738);
             button_quitter.Name = "button_quitter";
             button_quitter.Size = new Size(60, 60);
             button_quitter.TabIndex = 3;
@@ -64,9 +65,10 @@
             button_admin.BackgroundImageLayout = ImageLayout.Stretch;
             button_admin.Cursor = Cursors.Hand;
             button_admin.FlatAppearance.BorderSize = 0;
+            button_admin.FlatAppearance.MouseDownBackColor = Color.Transparent;
             button_admin.FlatAppearance.MouseOverBackColor = Color.Transparent;
             button_admin.FlatStyle = FlatStyle.Flat;
-            button_admin.Location = new Point(2, 750);
+            button_admin.Location = new Point(2, 738);
             button_admin.Name = "button_admin";
             button_admin.Size = new Size(60, 60);
             button_admin.TabIndex = 2;
@@ -79,10 +81,11 @@
             button_entrer_quiz.BackgroundImageLayout = ImageLayout.Stretch;
             button_entrer_quiz.Cursor = Cursors.Hand;
             button_entrer_quiz.FlatAppearance.BorderSize = 0;
+            button_entrer_quiz.FlatAppearance.MouseDownBackColor = Color.Transparent;
             button_entrer_quiz.FlatAppearance.MouseOverBackColor = Color.Transparent;
             button_entrer_quiz.FlatStyle = FlatStyle.Flat;
             button_entrer_quiz.Font = new Font("Caladea", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button_entrer_quiz.Location = new Point(118, 614);
+            button_entrer_quiz.Location = new Point(98, 613);
             button_entrer_quiz.Name = "button_entrer_quiz";
             button_entrer_quiz.Size = new Size(437, 95);
             button_entrer_quiz.TabIndex = 1;
@@ -92,7 +95,7 @@
             // 
             // textbox_pseudo
             // 
-            textbox_pseudo.Location = new Point(118, 512);
+            textbox_pseudo.Location = new Point(98, 512);
             textbox_pseudo.MaxLength = 30;
             textbox_pseudo.Name = "textbox_pseudo";
             textbox_pseudo.PlaceholderText = "Entrez votre pseudo";
@@ -103,7 +106,7 @@
             // 
             label1.BackColor = Color.Transparent;
             label1.ForeColor = Color.White;
-            label1.Location = new Point(118, 468);
+            label1.Location = new Point(98, 468);
             label1.Name = "label1";
             label1.Size = new Size(113, 41);
             label1.TabIndex = 4;
@@ -115,7 +118,7 @@
             label2.AutoSize = true;
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Caladea", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(189, 9);
+            label2.Location = new Point(169, 9);
             label2.Name = "label2";
             label2.Size = new Size(295, 32);
             label2.TabIndex = 5;
@@ -126,7 +129,7 @@
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Caladea", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(240, 80);
+            label3.Location = new Point(226, 79);
             label3.Name = "label3";
             label3.Size = new Size(187, 32);
             label3.TabIndex = 6;
@@ -148,7 +151,7 @@
             pictureBox2.BackColor = Color.Transparent;
             pictureBox2.BackgroundImage = CyberQuizz_App.Properties.Resources.logo_App_1;
             pictureBox2.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox2.Location = new Point(189, 152);
+            pictureBox2.Location = new Point(169, 155);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(295, 258);
             pictureBox2.TabIndex = 8;
@@ -160,7 +163,7 @@
             AutoScaleMode = AutoScaleMode.Dpi;
             BackgroundImage = CyberQuizz_App.Properties.Resources.fond;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(635, 807);
+            ClientSize = new Size(627, 799);
             ControlBox = false;
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);

@@ -9,6 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CyberQuiz_Lib\CyberQuiz_Lib.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Update="Form_Accueil.cs">
       <SubType>Form</SubType>
     </Compile>
