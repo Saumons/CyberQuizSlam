@@ -92,7 +92,7 @@
             // button_prof
             // 
             button_prof.BackColor = Color.Transparent;
-            button_prof.BackgroundImage = Properties.Resources.prof_mains_hanches;
+            button_prof.BackgroundImage = Properties.Resources.prof_doigt_lever;
             button_prof.BackgroundImageLayout = ImageLayout.Stretch;
             button_prof.Cursor = Cursors.Hand;
             button_prof.FlatAppearance.BorderSize = 0;
@@ -250,7 +250,7 @@
             AutoScaleMode = AutoScaleMode.Dpi;
             BackgroundImage = Properties.Resources.fond;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1084, 749);
+            ClientSize = new Size(1084, 817);
             ControlBox = false;
             Controls.Add(button_valider);
             Controls.Add(label_question);
