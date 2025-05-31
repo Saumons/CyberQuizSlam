@@ -62,10 +62,11 @@ namespace CyberQuiz_Lib
         public string RecupLibelleProposition(int numeroProposition)
         {
             string PropositionsQuestion;
-            string query = "SELECT * FROM reponse WHERE Question_Numero = @numero";
+            string query = "SELECT * FROM propositions WHERE Numero = @numero";
             SQLiteCommand command = new SQLiteCommand(query, _connection);
             command.Parameters.AddWithValue("@numero", numeroProposition);
             SQLiteDataReader reader = command.ExecuteReader();
+            reader.Read();
             return reader["Libelle"].ToString();
             
             

@@ -68,15 +68,15 @@ namespace CyberQuiz_Lib
             {
                 bool BonneReponse;
                 PropositionCRUD LienProposition = new PropositionCRUD(_connection);
-                if (int.Parse(reader["Numero"].ToString()) == 1 )
+                if (int.Parse(reader["Proposition_numero"].ToString()) == 1 )
                 {
                     BonneReponse = true;
                 }
                 else {BonneReponse = false;}
                 Reponse uneReponse = new Reponse(
                     //reader["Libelle"].ToString(),
-                    LienProposition.RecupLibelleProposition(int.Parse(reader["Numero"].ToString())),
-                    int.Parse(reader["Numero"].ToString()),
+                    LienProposition.RecupLibelleProposition(int.Parse(reader["Proposition_numero"].ToString())),
+                    int.Parse(reader["Proposition_numero"].ToString()),
                     BonneReponse
                     ) ;
                 ReponsesSelect.Add(uneReponse);
