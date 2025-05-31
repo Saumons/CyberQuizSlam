@@ -118,10 +118,6 @@ namespace CyberQuizz_App
             button_c.Text = reponses_question[2].Libelle;
             button_d.Text = reponses_question[3].Libelle;
             
-            button_a.Enabled = true;
-            button_b.Enabled = true;
-            button_c.Enabled = true;
-            button_d.Enabled = true;
             button_valider.Enabled = true;
         }
     }
