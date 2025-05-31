@@ -21,6 +21,9 @@ namespace CyberQuizz_App
 
         Reponse bonne_reponse;
         List<Reponse> reponses_question;
+        Dictionary<int, Button> lien_boutons_reponses;
+
+        int nb_bonnes_rep;
 
         int nbQuestion;
 
@@ -34,7 +37,7 @@ namespace CyberQuizz_App
             //QuestionCRUD question_actuelle = new QuestionCRUD();
             //toute_questions = question_actuelle.ChoixQuestion(theme, diff, nbQuestion);
 
-
+            nb_bonnes_rep = 0;
             List<Question> toute_questions = quiz_actuel.Questions;
             Question question_actuelle = toute_questions[0];
             afficher_question_reponse(question_actuelle);
@@ -73,11 +76,16 @@ namespace CyberQuizz_App
                 button_valider.Text = "Valider";
                 button_valider.Enabled = false;
                 //if (quiz_actuel.Questions.Count() > int.Parse(label_nombre_question.Text))
-                if (quiz_actuel.TestPartiFini())
+                if (!quiz_actuel.TestPartiFini())
                 {
                     //passer à la question suivante
                     question_actuelle = quiz_actuel.QuestionSuivante();
                     afficher_question_reponse(question_actuelle);
+                }
+                else
+                {
+                    Form_Score uneFenetre = new Form_Score(quiz_actuel,nb_bonnes_rep);
+                    uneFenetre.Show();
                 }
             }
             else
@@ -86,13 +94,22 @@ namespace CyberQuizz_App
 
                 // Ici, on pourrait vérifier la réponse donnée par le joueur
                 bonne_reponse = quiz_actuel.TestReponses(); //te renvoie la bonne réponse à la question
+                //lien_boutons_reponses[bonne_reponse.Numero]. = couleur que tu veux mettre pour la bonne réponse
+                //Faut aussi tester si la réponse sélectionner est la bonne(nb_bonnes_rep++) sinon tu la met d'une autre couleur
             }
         }
 
+        //Affiche le texte de la question et des réponses
         private void afficher_question_reponse(Question question_actuelle)
         {
             reponses_question = question_actuelle.Reponses;
             label_question.Text = question_actuelle.Libelle;
+
+            lien_boutons_reponses[reponses_question[0].Numero] = button_a;
+            lien_boutons_reponses[reponses_question[1].Numero] = button_b;
+            lien_boutons_reponses[reponses_question[2].Numero] = button_c;
+            lien_boutons_reponses[reponses_question[3].Numero] = button_d;
+
             button_a.Text = reponses_question[0].Libelle;
             button_b.Text = reponses_question[1].Libelle;
             button_c.Text = reponses_question[2].Libelle;
