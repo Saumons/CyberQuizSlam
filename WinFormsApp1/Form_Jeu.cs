@@ -77,7 +77,7 @@ namespace CyberQuizz_App
                 foreach (Button bouton in lien_boutons_reponses.Values)
                 {
                     bouton.FlatAppearance.BorderSize = 0; // On retire la bordure des boutons
-                    bouton.FlatAppearance.BorderColor = Color.Black; 
+                    bouton.FlatAppearance.BorderColor = Color.Black;  
                     bouton.Enabled = true;
                 }
                 button_valider.Text = "Valider";
