@@ -163,7 +163,7 @@
             AutoScaleMode = AutoScaleMode.Dpi;
             BackgroundImage = CyberQuizz_App.Properties.Resources.fond;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(627, 799);
+            ClientSize = new Size(623, 749);
             ControlBox = false;
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
@@ -182,6 +182,7 @@
             ShowIcon = false;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "SLAM";
+            Load += Form_Accueil_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);

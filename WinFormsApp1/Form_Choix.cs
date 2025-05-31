@@ -58,7 +58,7 @@ namespace CyberQuizz_App
 
         private void button_lancer_Click(object sender, EventArgs e)
         {
-            Quiz quiz = new Quiz(pseudo_joueur, button_theme, button_difficulte);
+            Quiz quiz = new Quiz(pseudo_joueur, button_theme, button_difficulte); //Il va te manquer le nombre de question si tu veux pas te faire chier mets le à 15
 
             Form_Jeu uneFenetre = new Form_Jeu();
             uneFenetre.ShowDialog();

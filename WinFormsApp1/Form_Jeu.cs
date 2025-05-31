@@ -58,6 +58,7 @@ namespace CyberQuizz_App
                 if (quiz_actuel.Question.Count() > int.Parse(label_nombre_question.Text))
                 {
                     //passer à la question suivante
+                    //Quiz.QuestionSuivante() (ça te retourne la prochaine question et incrémente le numeroQuetsion de 1)
                 }
             }
             else
@@ -65,6 +66,7 @@ namespace CyberQuizz_App
                 button_valider.Text = "Question suivante";
 
                 // Ici, on pourrait vérifier la réponse donnée par le joueur
+                //Quiz.TestReponse te renvoie la bonne réponse à la question
             }
         }
     }
