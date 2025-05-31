@@ -125,7 +125,7 @@ namespace CyberQuiz_Lib
         {
             Question QuestionActuel = _questions[_numQuestion];
             int cpt = 0;
-            while (QuestionActuel.Reponses[cpt].BonneReponse && cpt < 4) {cpt++; }
+            while (!QuestionActuel.Reponses[cpt].BonneReponse && cpt < 4) {cpt++; }
             return QuestionActuel.Reponses[cpt];
         }
 
