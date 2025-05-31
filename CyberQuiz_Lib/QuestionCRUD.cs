@@ -64,6 +64,7 @@ namespace CyberQuiz_Lib
         {
             Random rand = new Random();
             List<Question> QuestionsSelect = new List<Question>();
+            int TailleListe;
             string query = "SELECT * FROM question WHERE NiveauDifficulte_id = @difficulte AND Theme_numero LIKE @theme";
             SQLiteCommand command = new SQLiteCommand(query, _connection);
             command.Parameters.AddWithValue("@theme", "%" + theme + "%");
@@ -78,12 +79,12 @@ namespace CyberQuiz_Lib
                       );
                 QuestionsSelect.Add(uneQuestion);   
             }
-
+            TailleListe = QuestionsSelect.Count();
             //Mélange et réduit la liste a la taille désiré
             QuestionsSelect.Sort((x, y) => rand.Next(-1, 2));
-            for (int i = nbQuestion + 1; i < QuestionsSelect.Count(); i++)
+            for (int i = nbQuestion; i < TailleListe; i++)
             {
-                QuestionsSelect.RemoveAt(i);
+                QuestionsSelect.RemoveAt(nbQuestion);
             }
 
             return QuestionsSelect;

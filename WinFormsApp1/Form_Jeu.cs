@@ -37,7 +37,8 @@ namespace CyberQuizz_App
 
             List<Question> toute_questions = quiz_actuel.Questions;
             Question question_actuelle = toute_questions[0];
-            
+            afficher_question_reponse(question_actuelle);
+
         }
 
         private void button_quitter_Click(object sender, EventArgs e)
@@ -76,6 +77,7 @@ namespace CyberQuizz_App
                 {
                     //passer à la question suivante
                     question_actuelle = quiz_actuel.QuestionSuivante();
+                    afficher_question_reponse(question_actuelle);
                 }
             }
             else
@@ -85,6 +87,16 @@ namespace CyberQuizz_App
                 // Ici, on pourrait vérifier la réponse donnée par le joueur
                 bonne_reponse = quiz_actuel.TestReponses(); //te renvoie la bonne réponse à la question
             }
+        }
+
+        private void afficher_question_reponse(Question question_actuelle)
+        {
+            reponses_question = question_actuelle.Reponses;
+            label_question.Text = question_actuelle.Libelle;
+            button_a.Text = reponses_question[0].Libelle;
+            button_b.Text = reponses_question[1].Libelle;
+            button_c.Text = reponses_question[2].Libelle;
+            button_d.Text = reponses_question[3].Libelle;
         }
     }
 }
