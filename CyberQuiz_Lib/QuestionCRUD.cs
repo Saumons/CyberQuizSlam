@@ -60,8 +60,9 @@ namespace CyberQuiz_Lib
         /// <param name="theme">Thème du quiz</param>
         /// <param name="difficulte">Difficulté du quiz</param>
         /// <returns>La liste des questions séléctionnées</returns>
-        public List<Question> ChoixQuestion(string theme, string difficulte)
+        public List<Question> ChoixQuestion(string theme, string difficulte, int nbQuestion)
         {
+            Random rand = new Random();
             List<Question> QuestionsSelect = new List<Question>();
             string query = "SELECT * FROM question WHERE NiveauDifficulte_id = @difficulte AND Theme_numero LIKE @theme";
             SQLiteCommand command = new SQLiteCommand(query, _connection);
@@ -75,8 +76,16 @@ namespace CyberQuiz_Lib
                     int.Parse(reader["Numero"].ToString()),
                     _connection
                       );
-                QuestionsSelect.Add(uneQuestion);
+                QuestionsSelect.Add(uneQuestion);   
             }
+
+            //Mélange et réduit la liste a la taille désiré
+            QuestionsSelect.Sort((x, y) => rand.Next(-1, 2));
+            for (int i = nbQuestion + 1; i < QuestionsSelect.Count(); i++)
+            {
+                QuestionsSelect.RemoveAt(i);
+            }
+
             return QuestionsSelect;
               
         }

@@ -104,7 +104,7 @@ namespace CyberQuiz_Lib
         private void RemplirQuestions()
         {
             QuestionCRUD questionCRUD = new QuestionCRUD();
-            _questions = questionCRUD.ChoixQuestion(_theme, _difficulte);
+            _questions = questionCRUD.ChoixQuestion(_theme, _difficulte, _nbQuestions);
         }
 
         /// <summary>
