@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             button_quitter = new Button();
-            button_admin = new Button();
             button_entrer_quiz = new Button();
             textbox_pseudo = new TextBox();
             label1 = new Label();
@@ -57,22 +56,6 @@
             button_quitter.TabIndex = 3;
             button_quitter.UseVisualStyleBackColor = false;
             button_quitter.Click += button_quitter_Click;
-            // 
-            // button_admin
-            // 
-            button_admin.BackColor = Color.Transparent;
-            button_admin.BackgroundImage = CyberQuizz_App.Properties.Resources.pictoProfile;
-            button_admin.BackgroundImageLayout = ImageLayout.Stretch;
-            button_admin.Cursor = Cursors.Hand;
-            button_admin.FlatAppearance.BorderSize = 0;
-            button_admin.FlatAppearance.MouseDownBackColor = Color.Transparent;
-            button_admin.FlatAppearance.MouseOverBackColor = Color.Transparent;
-            button_admin.FlatStyle = FlatStyle.Flat;
-            button_admin.Location = new Point(2, 738);
-            button_admin.Name = "button_admin";
-            button_admin.Size = new Size(60, 60);
-            button_admin.TabIndex = 2;
-            button_admin.UseVisualStyleBackColor = false;
             // 
             // button_entrer_quiz
             // 
@@ -163,7 +146,7 @@
             AutoScaleMode = AutoScaleMode.Dpi;
             BackgroundImage = CyberQuizz_App.Properties.Resources.fond;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(618, 789);
+            ClientSize = new Size(614, 785);
             ControlBox = false;
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
@@ -172,7 +155,6 @@
             Controls.Add(label1);
             Controls.Add(textbox_pseudo);
             Controls.Add(button_entrer_quiz);
-            Controls.Add(button_admin);
             Controls.Add(button_quitter);
             Font = new Font("Caladea", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             FormBorderStyle = FormBorderStyle.FixedSingle;
@@ -191,7 +173,6 @@
         #endregion
 
         private Button button_quitter;
-        private Button button_admin;
         private Button button_entrer_quiz;
         private TextBox textbox_pseudo;
         private Label label1;
