@@ -249,7 +249,7 @@
             AutoScaleMode = AutoScaleMode.Dpi;
             BackgroundImage = Properties.Resources.fond;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1084, 831);
+            ClientSize = new Size(1084, 749);
             ControlBox = false;
             Controls.Add(button_valider);
             Controls.Add(label_question);

@@ -19,20 +19,25 @@ namespace CyberQuizz_App
         Question question_actuelle;
         List<Question> toute_questions;
 
+        Reponse bonne_reponse;
+        List<Reponse> reponses_question;
+
         int nbQuestion;
 
-        public Form_Jeu(string theme, string diff)
+        public Form_Jeu(string theme, string diff, Quiz quiz_actuel)
         {
             InitializeComponent();
 
             nbQuestion = 15;
 
             //label_nombre_question.Text = quiz_actuel.NbQuestions.ToString();
+            //QuestionCRUD question_actuelle = new QuestionCRUD();
+            //toute_questions = question_actuelle.ChoixQuestion(theme, diff, nbQuestion);
 
-            QuestionCRUD question_actuelle = new QuestionCRUD();
 
-            List<Question> toute_questions = new List<Question>();
-            toute_questions = question_actuelle.ChoixQuestion(theme, diff, nbQuestion);
+            List<Question> toute_questions = quiz_actuel.Questions;
+            Question question_actuelle = toute_questions[0];
+            
         }
 
         private void button_quitter_Click(object sender, EventArgs e)
@@ -66,10 +71,11 @@ namespace CyberQuizz_App
             {
                 button_valider.Text = "Valider";
                 button_valider.Enabled = false;
-                if (quiz_actuel.Questions.Count() > int.Parse(label_nombre_question.Text))
+                //if (quiz_actuel.Questions.Count() > int.Parse(label_nombre_question.Text))
+                if (quiz_actuel.TestPartiFini())
                 {
                     //passer à la question suivante
-                    //Question question_actuelle = Quiz.QuestionSuivante();
+                    question_actuelle = quiz_actuel.QuestionSuivante();
                 }
             }
             else
@@ -77,7 +83,7 @@ namespace CyberQuizz_App
                 button_valider.Text = "Question suivante";
 
                 // Ici, on pourrait vérifier la réponse donnée par le joueur
-                //Quiz.TestReponse te renvoie la bonne réponse à la question
+                bonne_reponse = quiz_actuel.TestReponses(); //te renvoie la bonne réponse à la question
             }
         }
     }

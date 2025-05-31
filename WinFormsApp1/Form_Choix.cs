@@ -65,7 +65,7 @@ namespace CyberQuizz_App
         {
             Quiz quiz = new Quiz(pseudo_joueur, button_theme, button_difficulte,15);
 
-            Form_Jeu uneFenetre = new Form_Jeu(button_theme,button_difficulte);
+            Form_Jeu uneFenetre = new Form_Jeu(button_theme,button_difficulte, quiz);
             uneFenetre.Show();
         }
 
