@@ -18,6 +18,8 @@ namespace CyberQuizz_App
             InitializeComponent();
             //NomDuChampPourLeScore.Text = nb_bonnes_rep.ToString() + " / " + quiz_actuel_fournis.NbQuestions.ToString()
             //Si tu peux un label qui dit ça : test_score(nb_bonnes_rep);
+            label_score.Text = test_score(nb_bonnes_rep);
+            label_point.Text = nb_bonnes_rep.ToString() + " / " + quiz_actuel_fournis.NbQuestions.ToString();
         }
 
         private void button_quitter_Click(object sender, EventArgs e)
@@ -37,8 +39,8 @@ namespace CyberQuizz_App
             String info_resultat;
             switch(nb_bonnes_rep)
             {
-                case < 7:
-                    info_resultat = "Notions acquises, mais il faut se renforcer";
+                case < 4:
+                    info_resultat = "Notions non acquises, il faut se renforcer";
                     break;
                 case <= 9:
                     info_resultat = "Il est recommandé de se former davantage";

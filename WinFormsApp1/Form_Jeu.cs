@@ -108,6 +108,7 @@ namespace CyberQuizz_App
                 lien_boutons_reponses[bonne_reponse.Numero].FlatAppearance.BorderSize = 3;
                 lien_boutons_reponses[bonne_reponse.Numero].FlatAppearance.BorderColor = Color.Green;
                 //Faut aussi tester si la réponse sélectionner est la bonne(nb_bonnes_rep++) sinon tu la met d'une autre couleur
+
             }
         }
 
