@@ -13,12 +13,12 @@ namespace CyberQuizz_App
 {
     public partial class Form_Choix : Form
     {
-        string pseudo_joueur = "j";
+        string pseudo_joueur = "";
 
         Quiz quiz;
 
-        string button_theme = "d";
-        string button_difficulte = "d";
+        string button_theme = "";
+        string button_difficulte = "";
 
         public Form_Choix(string pseudo)
         {
@@ -63,10 +63,17 @@ namespace CyberQuizz_App
 
         private void button_lancer_Click(object sender, EventArgs e)
         {
-            Quiz quiz = new Quiz(pseudo_joueur, button_theme, button_difficulte,15);
+            if (button_theme == "" || button_difficulte == "")
+            {
+               
+            }
+            else
+            {
+                Quiz quiz = new Quiz(pseudo_joueur, button_theme, button_difficulte, 15);
 
-            Form_Jeu uneFenetre = new Form_Jeu(button_theme,button_difficulte, quiz);
-            uneFenetre.Show();
+                Form_Jeu uneFenetre = new Form_Jeu(button_theme, button_difficulte, quiz);
+                uneFenetre.Show();
+            }
         }
 
         private void button_retour_Click(object sender, EventArgs e)

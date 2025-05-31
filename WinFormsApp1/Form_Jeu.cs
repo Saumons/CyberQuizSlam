@@ -77,11 +77,11 @@ namespace CyberQuizz_App
                 foreach (Button bouton in lien_boutons_reponses.Values)
                 {
                     bouton.FlatAppearance.BorderSize = 0; // On retire la bordure des boutons
+                    bouton.FlatAppearance.BorderColor = Color.Black; 
                     bouton.Enabled = true;
                 }
                 button_valider.Text = "Valider";
                 button_valider.Enabled = false;
-                //if (quiz_actuel.Questions.Count() > int.Parse(label_nombre_question.Text))
                 if (!quiz_actuel.TestPartiFini())
                 {
                     //passer à la question suivante
