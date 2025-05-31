@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CyberQuiz_Lib;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,7 +13,7 @@ namespace CyberQuizz_App
 {
     public partial class Form_Fin : Form
     {
-        public Form_Fin()
+        public Form_Fin(Quiz quiz_actuel,int nb_bonnes_rep)
         {
             InitializeComponent();
         }

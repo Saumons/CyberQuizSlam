@@ -74,6 +74,11 @@ namespace CyberQuizz_App
         {
             if (button_valider.Text == "Question suivante")
             {
+                foreach (Button bouton in lien_boutons_reponses.Values)
+                {
+                    bouton.FlatAppearance.BorderSize = 0; // On retire la bordure des boutons
+                    bouton.Enabled = true;
+                }
                 button_valider.Text = "Valider";
                 button_valider.Enabled = false;
                 //if (quiz_actuel.Questions.Count() > int.Parse(label_nombre_question.Text))
@@ -85,17 +90,23 @@ namespace CyberQuizz_App
                 }
                 else
                 {
-                    Form_Score uneFenetre = new Form_Score(quiz_actuel,nb_bonnes_rep);
+                    Form_Fin uneFenetre = new Form_Fin(quiz_actuel,nb_bonnes_rep);
                     uneFenetre.Show();
+                    this.Close();
                 }
             }
             else
             {
+                foreach (Button bouton in lien_boutons_reponses.Values)
+                {
+                    bouton.Enabled = false; // On désactive les boutons de réponse
+                }
                 button_valider.Text = "Question suivante";
 
                 // Ici, on pourrait vérifier la réponse donnée par le joueur
                 bonne_reponse = quiz_actuel.TestReponses(); //te renvoie la bonne réponse à la question
-                //lien_boutons_reponses[bonne_reponse.Numero]. = couleur que tu veux mettre pour la bonne réponse
+                lien_boutons_reponses[bonne_reponse.Numero].FlatAppearance.BorderSize = 3;
+                lien_boutons_reponses[bonne_reponse.Numero].FlatAppearance.BorderColor = Color.Green;
                 //Faut aussi tester si la réponse sélectionner est la bonne(nb_bonnes_rep++) sinon tu la met d'une autre couleur
             }
         }
