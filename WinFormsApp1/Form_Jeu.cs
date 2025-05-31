@@ -27,7 +27,7 @@ namespace CyberQuizz_App
 
         int nbQuestion;
 
-        public Form_Jeu(string theme, string diff, Quiz quiz_actuel)
+        public Form_Jeu(string theme, string diff, Quiz quiz_actuel_fournis)
         {
             InitializeComponent();
 
@@ -36,12 +36,12 @@ namespace CyberQuizz_App
             //label_nombre_question.Text = quiz_actuel.NbQuestions.ToString();
             //QuestionCRUD question_actuelle = new QuestionCRUD();
             //toute_questions = question_actuelle.ChoixQuestion(theme, diff, nbQuestion);
-
+            quiz_actuel = quiz_actuel_fournis;
             nb_bonnes_rep = 0;
             List<Question> toute_questions = quiz_actuel.Questions;
             lien_boutons_reponses = new Dictionary<int, Button>();
-            Question question_actuelle = toute_questions[0];
-            afficher_question_reponse(question_actuelle, quiz_actuel);
+            question_actuelle = toute_questions[0];
+            afficher_question_reponse();
 
         }
 
@@ -81,7 +81,7 @@ namespace CyberQuizz_App
                 {
                     //passer à la question suivante
                     question_actuelle = quiz_actuel.QuestionSuivante();
-                    afficher_question_reponse(question_actuelle, quiz_actuel);
+                    afficher_question_reponse();
                 }
                 else
                 {
@@ -101,7 +101,7 @@ namespace CyberQuizz_App
         }
 
         //Gère l'affichage de la page et le refresh
-        private void afficher_question_reponse(Question question_actuelle, Quiz quiz_actuel)
+        private void afficher_question_reponse()
         {
             //Affiche le numéro de la question sur le nombre total de question
             label_nombre_question.Text = (quiz_actuel.NumQuestion + 1).ToString() + " / " + quiz_actuel.NbQuestions.ToString();
@@ -117,6 +117,12 @@ namespace CyberQuizz_App
             button_b.Text = reponses_question[1].Libelle;
             button_c.Text = reponses_question[2].Libelle;
             button_d.Text = reponses_question[3].Libelle;
+            
+            button_a.Enabled = true;
+            button_b.Enabled = true;
+            button_c.Enabled = true;
+            button_d.Enabled = true;
+            button_valider.Enabled = true;
         }
     }
 }

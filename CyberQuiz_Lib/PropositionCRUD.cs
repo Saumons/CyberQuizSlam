@@ -97,6 +97,7 @@ namespace CyberQuiz_Lib
                 .Replace("''", "'")     // Remplace les doubles apostrophes par une seule
                 .Replace("  ", " ")     // Remplace les doubles espaces par un seul
                 .Replace("')", "")     // Supprime les parenthèses et cotes de fin
+                .Replace(@"\", "")      //Supprime les antislash
                 .Trim();                // Supprime les espaces en début et fin
         }
 

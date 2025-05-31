@@ -123,12 +123,13 @@
             button_a.BackgroundImage = Properties.Resources.reponseQuizzA;
             button_a.BackgroundImageLayout = ImageLayout.Stretch;
             button_a.Cursor = Cursors.Hand;
+            button_a.Enabled = false;
             button_a.FlatAppearance.BorderColor = Color.Black;
             button_a.FlatAppearance.BorderSize = 0;
             button_a.FlatAppearance.MouseDownBackColor = Color.Transparent;
             button_a.FlatAppearance.MouseOverBackColor = Color.Transparent;
             button_a.FlatStyle = FlatStyle.Flat;
-            button_a.Location = new Point(51, 414);
+            button_a.Location = new Point(51, 383);
             button_a.Name = "button_a";
             button_a.Size = new Size(450, 95);
             button_a.TabIndex = 1;
@@ -142,11 +143,12 @@
             button_b.BackgroundImage = Properties.Resources.reponseQuizzB;
             button_b.BackgroundImageLayout = ImageLayout.Stretch;
             button_b.Cursor = Cursors.Hand;
+            button_b.Enabled = false;
             button_b.FlatAppearance.BorderSize = 0;
             button_b.FlatAppearance.MouseDownBackColor = Color.Transparent;
             button_b.FlatAppearance.MouseOverBackColor = Color.Transparent;
             button_b.FlatStyle = FlatStyle.Flat;
-            button_b.Location = new Point(580, 414);
+            button_b.Location = new Point(580, 383);
             button_b.Name = "button_b";
             button_b.Size = new Size(450, 95);
             button_b.TabIndex = 2;
@@ -160,11 +162,12 @@
             button_c.BackgroundImage = Properties.Resources.reponseQuizzC;
             button_c.BackgroundImageLayout = ImageLayout.Stretch;
             button_c.Cursor = Cursors.Hand;
+            button_c.Enabled = false;
             button_c.FlatAppearance.BorderSize = 0;
             button_c.FlatAppearance.MouseDownBackColor = Color.Transparent;
             button_c.FlatAppearance.MouseOverBackColor = Color.Transparent;
             button_c.FlatStyle = FlatStyle.Flat;
-            button_c.Location = new Point(51, 560);
+            button_c.Location = new Point(51, 529);
             button_c.Name = "button_c";
             button_c.Size = new Size(450, 95);
             button_c.TabIndex = 3;
@@ -178,11 +181,12 @@
             button_d.BackgroundImage = Properties.Resources.reponseQuizzD;
             button_d.BackgroundImageLayout = ImageLayout.Stretch;
             button_d.Cursor = Cursors.Hand;
+            button_d.Enabled = false;
             button_d.FlatAppearance.BorderSize = 0;
             button_d.FlatAppearance.MouseDownBackColor = Color.Transparent;
             button_d.FlatAppearance.MouseOverBackColor = Color.Transparent;
             button_d.FlatStyle = FlatStyle.Flat;
-            button_d.Location = new Point(580, 560);
+            button_d.Location = new Point(580, 529);
             button_d.Name = "button_d";
             button_d.Size = new Size(450, 95);
             button_d.TabIndex = 4;
@@ -231,11 +235,12 @@
             // 
             // button_valider
             // 
+            button_valider.Enabled = false;
             button_valider.FlatAppearance.BorderSize = 0;
             button_valider.FlatAppearance.MouseOverBackColor = Color.White;
             button_valider.FlatStyle = FlatStyle.Flat;
             button_valider.Font = new Font("Caladea", 17.9999981F);
-            button_valider.Location = new Point(410, 721);
+            button_valider.Location = new Point(410, 659);
             button_valider.Name = "button_valider";
             button_valider.Size = new Size(264, 86);
             button_valider.TabIndex = 32;
@@ -264,7 +269,6 @@
             Controls.Add(button_retour);
             Controls.Add(button_quitter);
             Controls.Add(pictureBox1);
-            Enabled = false;
             Font = new Font("Caladea", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "Form_Jeu";

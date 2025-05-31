@@ -135,7 +135,7 @@ namespace CyberQuiz_Lib
         /// <returns>Vrai si la partie est fini, faux sinon</returns>
         public bool TestPartiFini()
         {
-            return (_nbQuestions < _numQuestion);
+            return (_nbQuestions < _numQuestion+1);
         }
 
         public Question QuestionSuivante()
