@@ -185,7 +185,7 @@
             button_reseaux_harcelement.Name = "button_reseaux_harcelement";
             button_reseaux_harcelement.Size = new Size(264, 86);
             button_reseaux_harcelement.TabIndex = 13;
-            button_reseaux_harcelement.Text = "Réseaux Sociaux\r\nCyber-Harcèlement";
+            button_reseaux_harcelement.Text = "Réseaux Sociaux, Cyber-harcèlement";
             button_reseaux_harcelement.UseVisualStyleBackColor = false;
             button_reseaux_harcelement.Click += button_entreprise_Click;
             // 
@@ -204,7 +204,7 @@
             button_culture_mdp.Name = "button_culture_mdp";
             button_culture_mdp.Size = new Size(264, 86);
             button_culture_mdp.TabIndex = 14;
-            button_culture_mdp.Text = "Culture Cyber\r\nMots de passe";
+            button_culture_mdp.Text = "Mots de passes , Culture Cyber";
             button_culture_mdp.UseVisualStyleBackColor = false;
             button_culture_mdp.Click += button_entreprise_Click;
             // 
@@ -272,6 +272,7 @@
             button_regles.Size = new Size(90, 90);
             button_regles.TabIndex = 19;
             button_regles.UseVisualStyleBackColor = false;
+            button_regles.Click += button_regles_Click;
             // 
             // Form_Choix
             // 

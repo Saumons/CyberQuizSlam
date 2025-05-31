@@ -110,9 +110,9 @@
             label_nombre_question.AutoSize = true;
             label_nombre_question.BackColor = Color.Transparent;
             label_nombre_question.ForeColor = Color.White;
-            label_nombre_question.Location = new Point(16, 144);
+            label_nombre_question.Location = new Point(12, 145);
             label_nombre_question.Name = "label_nombre_question";
-            label_nombre_question.Size = new Size(121, 15);
+            label_nombre_question.Size = new Size(177, 22);
             label_nombre_question.TabIndex = 23;
             label_nombre_question.Text = "Nombre de questions";
             label_nombre_question.TextAlign = ContentAlignment.MiddleCenter;
@@ -132,6 +132,7 @@
             button_a.Name = "button_a";
             button_a.Size = new Size(450, 95);
             button_a.TabIndex = 1;
+            button_a.TextAlign = ContentAlignment.MiddleRight;
             button_a.UseVisualStyleBackColor = false;
             button_a.Click += button_a_Click;
             // 
@@ -149,6 +150,7 @@
             button_b.Name = "button_b";
             button_b.Size = new Size(450, 95);
             button_b.TabIndex = 2;
+            button_b.TextAlign = ContentAlignment.MiddleRight;
             button_b.UseVisualStyleBackColor = false;
             button_b.Click += button_a_Click;
             // 
@@ -166,6 +168,7 @@
             button_c.Name = "button_c";
             button_c.Size = new Size(450, 95);
             button_c.TabIndex = 3;
+            button_c.TextAlign = ContentAlignment.MiddleRight;
             button_c.UseVisualStyleBackColor = false;
             button_c.Click += button_a_Click;
             // 
@@ -183,6 +186,7 @@
             button_d.Name = "button_d";
             button_d.Size = new Size(450, 95);
             button_d.TabIndex = 4;
+            button_d.TextAlign = ContentAlignment.MiddleRight;
             button_d.UseVisualStyleBackColor = false;
             button_d.Click += button_a_Click;
             // 
@@ -261,6 +265,7 @@
             Controls.Add(button_quitter);
             Controls.Add(pictureBox1);
             Enabled = false;
+            Font = new Font("Caladea", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "Form_Jeu";
             StartPosition = FormStartPosition.CenterScreen;

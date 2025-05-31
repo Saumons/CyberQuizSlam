@@ -23,9 +23,5 @@ namespace CyberQuiz_App
             uneFenetre.ShowDialog();
         }
 
-        private void Form_Accueil_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

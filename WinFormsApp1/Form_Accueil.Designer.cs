@@ -51,7 +51,7 @@
             button_quitter.FlatAppearance.MouseDownBackColor = Color.Transparent;
             button_quitter.FlatAppearance.MouseOverBackColor = Color.Transparent;
             button_quitter.FlatStyle = FlatStyle.Flat;
-            button_quitter.Location = new Point(565, 738);
+            button_quitter.Location = new Point(559, 738);
             button_quitter.Name = "button_quitter";
             button_quitter.Size = new Size(60, 60);
             button_quitter.TabIndex = 3;
@@ -163,7 +163,7 @@
             AutoScaleMode = AutoScaleMode.Dpi;
             BackgroundImage = CyberQuizz_App.Properties.Resources.fond;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(623, 749);
+            ClientSize = new Size(615, 793);
             ControlBox = false;
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
@@ -182,7 +182,6 @@
             ShowIcon = false;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "SLAM";
-            Load += Form_Accueil_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);

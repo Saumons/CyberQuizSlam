@@ -15,13 +15,24 @@ namespace CyberQuizz_App
     public partial class Form_Jeu : Form
     {
         Quiz quiz_actuel;
-        public Form_Jeu()
+
+        Question question_actuelle;
+        List<Question> toute_questions;
+
+        int nbQuestion;
+
+        public Form_Jeu(string theme, string diff)
         {
             InitializeComponent();
-            //quiz_actuel = quiz;
-            label_nombre_question.Text = quiz_actuel.NbQuestions.ToString();
 
-            label_question.Text = "quideougaodgpiaugdiugaeipudgoiabsqdoubaeoubgdbouazdiuaeopusgdimuaegodugaeougdouagdouaegdougaezoudgauodgaoùzugdouaegdouagdougazoudgazuodgazuodgouazgdouazgduoazgdouazgdouazgdo";
+            nbQuestion = 15;
+
+            //label_nombre_question.Text = quiz_actuel.NbQuestions.ToString();
+
+            QuestionCRUD question_actuelle = new QuestionCRUD();
+
+            List<Question> toute_questions = new List<Question>();
+            toute_questions = question_actuelle.ChoixQuestion(theme, diff, nbQuestion);
         }
 
         private void button_quitter_Click(object sender, EventArgs e)
@@ -55,10 +66,10 @@ namespace CyberQuizz_App
             {
                 button_valider.Text = "Valider";
                 button_valider.Enabled = false;
-                if (quiz_actuel.Question.Count() > int.Parse(label_nombre_question.Text))
+                if (quiz_actuel.Questions.Count() > int.Parse(label_nombre_question.Text))
                 {
                     //passer à la question suivante
-                    //Quiz.QuestionSuivante() (ça te retourne la prochaine question et incrémente le numeroQuetsion de 1)
+                    //Question question_actuelle = Quiz.QuestionSuivante();
                 }
             }
             else

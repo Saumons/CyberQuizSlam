@@ -30,6 +30,11 @@ namespace CyberQuizz_App
         {
             Application.Exit();
         }
+        private void button_regles_Click(object sender, EventArgs e)
+        {
+            Form_Regles uneFenetre = new Form_Regles();
+            uneFenetre.ShowDialog();
+        }
         private void button_facile_Click(object sender, EventArgs e)
         {
             // On retire la bordure des boutons
@@ -58,10 +63,10 @@ namespace CyberQuizz_App
 
         private void button_lancer_Click(object sender, EventArgs e)
         {
-            Quiz quiz = new Quiz(pseudo_joueur, button_theme, button_difficulte); //Il va te manquer le nombre de question si tu veux pas te faire chier mets le à 15
+            Quiz quiz = new Quiz(pseudo_joueur, button_theme, button_difficulte,15);
 
-            Form_Jeu uneFenetre = new Form_Jeu();
-            uneFenetre.ShowDialog();
+            Form_Jeu uneFenetre = new Form_Jeu(button_theme,button_difficulte);
+            uneFenetre.Show();
         }
 
         private void button_retour_Click(object sender, EventArgs e)
