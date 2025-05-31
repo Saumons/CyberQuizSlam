@@ -73,7 +73,7 @@ namespace CyberQuiz_Lib
             while (reader.Read())
             {
                 Question uneQuestion = new Question(
-                    reader["Libelle"].ToString(),
+                     NettoyerLibelle(reader["Libelle"].ToString()),
                     int.Parse(reader["Numero"].ToString()),
                     _connection
                       );
@@ -86,9 +86,33 @@ namespace CyberQuiz_Lib
             {
                 QuestionsSelect.RemoveAt(nbQuestion);
             }
-
+            reader.Close();
             return QuestionsSelect;
               
+        }
+
+        /// <summary>
+        /// Nettoie le libellé en supprimant les caractères indésirables
+        /// </summary>
+        /// <param name="libelle">Le libellé à nettoyer</param>
+        /// <returns>Le libellé nettoyé</returns>
+        private string NettoyerLibelle(string libelle)
+        {
+            if (string.IsNullOrEmpty(libelle))
+                return libelle;
+
+            // Remplace les séquences d'échappement courantes
+            return libelle
+                .Replace("\\r", "")     // Supprime \r
+                .Replace("\\n", " ")    // Remplace \n par un espace
+                .Replace("\\t", " ")    // Remplace \t par un espace
+                .Replace("\r", "")      // Supprime les vrais retours chariot
+                .Replace("\n", " ")     // Remplace les vrais sauts de ligne par un espace
+                .Replace("\t", " ")     // Remplace les vraies tabulations par un espace
+                .Replace("''", "'")     // Remplace les doubles apostrophes par une seule
+                .Replace("  ", " ")     // Remplace les doubles espaces par un seul
+                .Replace("')", "")     // Supprime les parenthèses et cotes de fin
+                .Trim();                // Supprime les espaces en début et fin
         }
 
         #endregion

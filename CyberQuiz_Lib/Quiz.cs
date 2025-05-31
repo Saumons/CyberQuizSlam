@@ -69,6 +69,15 @@ namespace CyberQuiz_Lib
             //set { _questions = value; }
         }
 
+        /// <summary>
+        /// Obtient le numero de question actuel
+        /// </summary>
+        public int NumQuestion
+        {
+            get { return _numQuestion; }
+            //set { _nbQuestions = value; }
+        }
+
         #endregion
 
         #region Constructeur

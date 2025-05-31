@@ -68,7 +68,7 @@ namespace CyberQuiz_Lib
             {
                 bool BonneReponse;
                 PropositionCRUD LienProposition = new PropositionCRUD(_connection);
-                if (int.Parse(reader["Proposition_numero"].ToString()) == 1 )
+                if (int.Parse(reader["BonneRep"].ToString()) == 1 )
                 {
                     BonneReponse = true;
                 }
@@ -81,6 +81,7 @@ namespace CyberQuiz_Lib
                     ) ;
                 ReponsesSelect.Add(uneReponse);
             }
+            reader.Close();
             return ReponsesSelect;
         }
         #endregion

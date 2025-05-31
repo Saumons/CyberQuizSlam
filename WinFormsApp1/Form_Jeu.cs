@@ -39,8 +39,9 @@ namespace CyberQuizz_App
 
             nb_bonnes_rep = 0;
             List<Question> toute_questions = quiz_actuel.Questions;
+            lien_boutons_reponses = new Dictionary<int, Button>();
             Question question_actuelle = toute_questions[0];
-            afficher_question_reponse(question_actuelle);
+            afficher_question_reponse(question_actuelle, quiz_actuel);
 
         }
 
@@ -80,7 +81,7 @@ namespace CyberQuizz_App
                 {
                     //passer à la question suivante
                     question_actuelle = quiz_actuel.QuestionSuivante();
-                    afficher_question_reponse(question_actuelle);
+                    afficher_question_reponse(question_actuelle, quiz_actuel);
                 }
                 else
                 {
@@ -99,9 +100,11 @@ namespace CyberQuizz_App
             }
         }
 
-        //Affiche le texte de la question et des réponses
-        private void afficher_question_reponse(Question question_actuelle)
+        //Gère l'affichage de la page et le refresh
+        private void afficher_question_reponse(Question question_actuelle, Quiz quiz_actuel)
         {
+            //Affiche le numéro de la question sur le nombre total de question
+            label_nombre_question.Text = (quiz_actuel.NumQuestion + 1).ToString() + " / " + quiz_actuel.NbQuestions.ToString();
             reponses_question = question_actuelle.Reponses;
             label_question.Text = question_actuelle.Libelle;
 
