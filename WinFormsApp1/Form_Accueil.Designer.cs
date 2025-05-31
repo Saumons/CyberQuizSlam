@@ -51,7 +51,7 @@
             button_quitter.FlatAppearance.MouseDownBackColor = Color.Transparent;
             button_quitter.FlatAppearance.MouseOverBackColor = Color.Transparent;
             button_quitter.FlatStyle = FlatStyle.Flat;
-            button_quitter.Location = new Point(559, 738);
+            button_quitter.Location = new Point(551, 728);
             button_quitter.Name = "button_quitter";
             button_quitter.Size = new Size(60, 60);
             button_quitter.TabIndex = 3;
@@ -163,7 +163,7 @@
             AutoScaleMode = AutoScaleMode.Dpi;
             BackgroundImage = CyberQuizz_App.Properties.Resources.fond;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(615, 793);
+            ClientSize = new Size(618, 789);
             ControlBox = false;
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);

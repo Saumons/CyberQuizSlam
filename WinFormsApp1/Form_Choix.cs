@@ -44,7 +44,7 @@ namespace CyberQuizz_App
 
             // On met la bordure du bouton cliqué à 1 et on enregistre la difficulté choisie
             Button unBouton = (Button)sender;
-            button_theme = unBouton.Text;
+            button_difficulte = unBouton.Text;
             unBouton.FlatAppearance.BorderSize = 2;
         }
 
@@ -57,7 +57,7 @@ namespace CyberQuizz_App
 
             // On met la bordure du bouton cliqué à 1 et on enregistre le thème choisi
             Button unBouton = (Button)sender;
-            button_difficulte = unBouton.Text;
+            button_theme = unBouton.Text;
             unBouton.FlatAppearance.BorderSize = 2;
         }
 
