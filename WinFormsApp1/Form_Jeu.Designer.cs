@@ -123,7 +123,6 @@
             button_a.BackgroundImage = Properties.Resources.reponseQuizzA;
             button_a.BackgroundImageLayout = ImageLayout.Stretch;
             button_a.Cursor = Cursors.Hand;
-            button_a.Enabled = false;
             button_a.FlatAppearance.BorderColor = Color.Black;
             button_a.FlatAppearance.BorderSize = 0;
             button_a.FlatAppearance.MouseDownBackColor = Color.Transparent;
@@ -143,7 +142,6 @@
             button_b.BackgroundImage = Properties.Resources.reponseQuizzB;
             button_b.BackgroundImageLayout = ImageLayout.Stretch;
             button_b.Cursor = Cursors.Hand;
-            button_b.Enabled = false;
             button_b.FlatAppearance.BorderSize = 0;
             button_b.FlatAppearance.MouseDownBackColor = Color.Transparent;
             button_b.FlatAppearance.MouseOverBackColor = Color.Transparent;
@@ -162,7 +160,6 @@
             button_c.BackgroundImage = Properties.Resources.reponseQuizzC;
             button_c.BackgroundImageLayout = ImageLayout.Stretch;
             button_c.Cursor = Cursors.Hand;
-            button_c.Enabled = false;
             button_c.FlatAppearance.BorderSize = 0;
             button_c.FlatAppearance.MouseDownBackColor = Color.Transparent;
             button_c.FlatAppearance.MouseOverBackColor = Color.Transparent;
@@ -181,7 +178,6 @@
             button_d.BackgroundImage = Properties.Resources.reponseQuizzD;
             button_d.BackgroundImageLayout = ImageLayout.Stretch;
             button_d.Cursor = Cursors.Hand;
-            button_d.Enabled = false;
             button_d.FlatAppearance.BorderSize = 0;
             button_d.FlatAppearance.MouseDownBackColor = Color.Transparent;
             button_d.FlatAppearance.MouseOverBackColor = Color.Transparent;
