@@ -14,7 +14,7 @@ namespace CyberQuiz_Lib
         #region Propriétés
 
         private List<Question> _questions;
-        private String _joueur;
+        private Utilisateur _joueur;
         private String _theme;
         private String _difficulte;
         private int _nbQuestions;
