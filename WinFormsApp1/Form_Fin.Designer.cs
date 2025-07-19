@@ -63,7 +63,7 @@
             button_quitter.FlatAppearance.MouseDownBackColor = Color.FromArgb(252, 235, 243);
             button_quitter.FlatAppearance.MouseOverBackColor = Color.FromArgb(252, 235, 243);
             button_quitter.FlatStyle = FlatStyle.Flat;
-            button_quitter.Location = new Point(413, 501);
+            button_quitter.Location = new Point(465, 583);
             button_quitter.Name = "button_quitter";
             button_quitter.Size = new Size(150, 150);
             button_quitter.TabIndex = 10;
@@ -73,18 +73,18 @@
             // 
             // button_retour_choix
             // 
-            button_retour_choix.BackColor = Color.FromArgb(252, 235, 243);
+            button_retour_choix.BackColor = Color.Transparent;
+            button_retour_choix.BackgroundImage = Properties.Resources.retour_btn;
             button_retour_choix.BackgroundImageLayout = ImageLayout.Stretch;
             button_retour_choix.Cursor = Cursors.Hand;
             button_retour_choix.FlatAppearance.BorderSize = 0;
             button_retour_choix.FlatAppearance.MouseDownBackColor = Color.FromArgb(252, 235, 243);
             button_retour_choix.FlatAppearance.MouseOverBackColor = Color.FromArgb(252, 235, 243);
             button_retour_choix.FlatStyle = FlatStyle.Flat;
-            button_retour_choix.Location = new Point(51, 501);
+            button_retour_choix.Location = new Point(12, 628);
             button_retour_choix.Name = "button_retour_choix";
-            button_retour_choix.Size = new Size(150, 150);
+            button_retour_choix.Size = new Size(102, 105);
             button_retour_choix.TabIndex = 12;
-            button_retour_choix.Text = "RETOUR";
             button_retour_choix.UseVisualStyleBackColor = false;
             button_retour_choix.Click += button_retour_choix_Click;
             // 

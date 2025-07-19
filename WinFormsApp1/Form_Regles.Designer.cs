@@ -69,9 +69,9 @@
             // 
             label1.BackColor = Color.FromArgb(252, 235, 243);
             label1.ForeColor = Color.Black;
-            label1.Location = new Point(22, 28);
+            label1.Location = new Point(22, 39);
             label1.Name = "label1";
-            label1.Size = new Size(389, 567);
+            label1.Size = new Size(390, 558);
             label1.TabIndex = 0;
             label1.Text = resources.GetString("label1.Text");
             label1.TextAlign = ContentAlignment.MiddleCenter;

@@ -41,6 +41,14 @@
             button_question = new Button();
             label_question = new Label();
             button_valider = new Button();
+            button_answer_a = new Button();
+            button_answer_b = new Button();
+            button_answer_c = new Button();
+            button_answer_d = new Button();
+            button_bordure_a = new Button();
+            button_bordure_b = new Button();
+            button_bordure_c = new Button();
+            button_bordure_d = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -128,12 +136,13 @@
             button_a.FlatAppearance.MouseDownBackColor = Color.Transparent;
             button_a.FlatAppearance.MouseOverBackColor = Color.Transparent;
             button_a.FlatStyle = FlatStyle.Flat;
-            button_a.Location = new Point(51, 383);
+            button_a.Location = new Point(51, 382);
             button_a.Name = "button_a";
             button_a.Size = new Size(450, 95);
             button_a.TabIndex = 1;
+            button_a.Tag = "a";
             button_a.TextAlign = ContentAlignment.MiddleRight;
-            button_a.UseVisualStyleBackColor = false;
+            button_a.UseVisualStyleBackColor = true;
             button_a.Click += button_a_Click;
             // 
             // button_b
@@ -146,10 +155,11 @@
             button_b.FlatAppearance.MouseDownBackColor = Color.Transparent;
             button_b.FlatAppearance.MouseOverBackColor = Color.Transparent;
             button_b.FlatStyle = FlatStyle.Flat;
-            button_b.Location = new Point(580, 383);
+            button_b.Location = new Point(580, 382);
             button_b.Name = "button_b";
             button_b.Size = new Size(450, 95);
             button_b.TabIndex = 2;
+            button_b.Tag = "b";
             button_b.TextAlign = ContentAlignment.MiddleRight;
             button_b.UseVisualStyleBackColor = false;
             button_b.Click += button_a_Click;
@@ -164,10 +174,11 @@
             button_c.FlatAppearance.MouseDownBackColor = Color.Transparent;
             button_c.FlatAppearance.MouseOverBackColor = Color.Transparent;
             button_c.FlatStyle = FlatStyle.Flat;
-            button_c.Location = new Point(51, 529);
+            button_c.Location = new Point(51, 528);
             button_c.Name = "button_c";
             button_c.Size = new Size(450, 95);
             button_c.TabIndex = 3;
+            button_c.Tag = "c";
             button_c.TextAlign = ContentAlignment.MiddleRight;
             button_c.UseVisualStyleBackColor = false;
             button_c.Click += button_a_Click;
@@ -182,10 +193,11 @@
             button_d.FlatAppearance.MouseDownBackColor = Color.Transparent;
             button_d.FlatAppearance.MouseOverBackColor = Color.Transparent;
             button_d.FlatStyle = FlatStyle.Flat;
-            button_d.Location = new Point(580, 529);
+            button_d.Location = new Point(580, 528);
             button_d.Name = "button_d";
             button_d.Size = new Size(450, 95);
             button_d.TabIndex = 4;
+            button_d.Tag = "d";
             button_d.TextAlign = ContentAlignment.MiddleRight;
             button_d.UseVisualStyleBackColor = false;
             button_d.Click += button_a_Click;
@@ -244,6 +256,131 @@
             button_valider.UseVisualStyleBackColor = true;
             button_valider.Click += button_valider_Click;
             // 
+            // button_answer_a
+            // 
+            button_answer_a.BackColor = Color.Transparent;
+            button_answer_a.BackgroundImage = Properties.Resources.btn_rouge;
+            button_answer_a.BackgroundImageLayout = ImageLayout.Stretch;
+            button_answer_a.Cursor = Cursors.Hand;
+            button_answer_a.FlatAppearance.BorderColor = Color.Black;
+            button_answer_a.FlatAppearance.BorderSize = 0;
+            button_answer_a.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            button_answer_a.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            button_answer_a.FlatStyle = FlatStyle.Flat;
+            button_answer_a.Location = new Point(135, 382);
+            button_answer_a.Name = "button_answer_a";
+            button_answer_a.Size = new Size(366, 95);
+            button_answer_a.TabIndex = 33;
+            button_answer_a.Tag = "a";
+            button_answer_a.UseVisualStyleBackColor = false;
+            button_answer_a.Click += button_a_Click;
+            // 
+            // button_answer_b
+            // 
+            button_answer_b.BackColor = Color.Transparent;
+            button_answer_b.BackgroundImage = Properties.Resources.btn_orange;
+            button_answer_b.BackgroundImageLayout = ImageLayout.Stretch;
+            button_answer_b.Cursor = Cursors.Hand;
+            button_answer_b.FlatAppearance.BorderSize = 0;
+            button_answer_b.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            button_answer_b.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            button_answer_b.FlatStyle = FlatStyle.Flat;
+            button_answer_b.Location = new Point(668, 382);
+            button_answer_b.Name = "button_answer_b";
+            button_answer_b.Size = new Size(362, 95);
+            button_answer_b.TabIndex = 34;
+            button_answer_b.Tag = "b";
+            button_answer_b.UseVisualStyleBackColor = false;
+            button_answer_b.Click += button_a_Click;
+            // 
+            // button_answer_c
+            // 
+            button_answer_c.BackColor = Color.Transparent;
+            button_answer_c.BackgroundImage = Properties.Resources.btn_bleu;
+            button_answer_c.BackgroundImageLayout = ImageLayout.Stretch;
+            button_answer_c.Cursor = Cursors.Hand;
+            button_answer_c.FlatAppearance.BorderSize = 0;
+            button_answer_c.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            button_answer_c.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            button_answer_c.FlatStyle = FlatStyle.Flat;
+            button_answer_c.Location = new Point(135, 528);
+            button_answer_c.Name = "button_answer_c";
+            button_answer_c.Size = new Size(366, 95);
+            button_answer_c.TabIndex = 35;
+            button_answer_c.Tag = "c";
+            button_answer_c.UseVisualStyleBackColor = false;
+            button_answer_c.Click += button_a_Click;
+            // 
+            // button_answer_d
+            // 
+            button_answer_d.BackColor = Color.Transparent;
+            button_answer_d.BackgroundImage = Properties.Resources.btn_vert;
+            button_answer_d.BackgroundImageLayout = ImageLayout.Stretch;
+            button_answer_d.Cursor = Cursors.Hand;
+            button_answer_d.FlatAppearance.BorderSize = 0;
+            button_answer_d.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            button_answer_d.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            button_answer_d.FlatStyle = FlatStyle.Flat;
+            button_answer_d.Location = new Point(668, 528);
+            button_answer_d.Name = "button_answer_d";
+            button_answer_d.Size = new Size(362, 95);
+            button_answer_d.TabIndex = 36;
+            button_answer_d.Tag = "d";
+            button_answer_d.UseVisualStyleBackColor = false;
+            button_answer_d.Click += button_a_Click;
+            // 
+            // button_bordure_a
+            // 
+            button_bordure_a.BackColor = Color.Transparent;
+            button_bordure_a.BackgroundImageLayout = ImageLayout.Stretch;
+            button_bordure_a.Enabled = false;
+            button_bordure_a.FlatAppearance.BorderSize = 0;
+            button_bordure_a.FlatStyle = FlatStyle.Flat;
+            button_bordure_a.Location = new Point(48, 380);
+            button_bordure_a.Name = "button_bordure_a";
+            button_bordure_a.Size = new Size(456, 100);
+            button_bordure_a.TabIndex = 37;
+            button_bordure_a.UseVisualStyleBackColor = false;
+            // 
+            // button_bordure_b
+            // 
+            button_bordure_b.BackColor = Color.Transparent;
+            button_bordure_b.BackgroundImageLayout = ImageLayout.Stretch;
+            button_bordure_b.Enabled = false;
+            button_bordure_b.FlatAppearance.BorderSize = 0;
+            button_bordure_b.FlatStyle = FlatStyle.Flat;
+            button_bordure_b.Location = new Point(577, 380);
+            button_bordure_b.Name = "button_bordure_b";
+            button_bordure_b.Size = new Size(456, 100);
+            button_bordure_b.TabIndex = 38;
+            button_bordure_b.UseVisualStyleBackColor = false;
+            // 
+            // button_bordure_c
+            // 
+            button_bordure_c.BackColor = Color.Transparent;
+            button_bordure_c.BackgroundImageLayout = ImageLayout.Stretch;
+            button_bordure_c.Enabled = false;
+            button_bordure_c.FlatAppearance.BorderSize = 0;
+            button_bordure_c.FlatStyle = FlatStyle.Flat;
+            button_bordure_c.Location = new Point(48, 526);
+            button_bordure_c.Name = "button_bordure_c";
+            button_bordure_c.Size = new Size(456, 100);
+            button_bordure_c.TabIndex = 39;
+            button_bordure_c.UseVisualStyleBackColor = false;
+            // 
+            // button_bordure_d
+            // 
+            button_bordure_d.BackColor = Color.Transparent;
+            button_bordure_d.BackgroundImageLayout = ImageLayout.Stretch;
+            button_bordure_d.Enabled = false;
+            button_bordure_d.FlatAppearance.BorderSize = 0;
+            button_bordure_d.FlatStyle = FlatStyle.Flat;
+            button_bordure_d.Location = new Point(577, 526);
+            button_bordure_d.Name = "button_bordure_d";
+            button_bordure_d.Size = new Size(456, 100);
+            button_bordure_d.TabIndex = 40;
+            button_bordure_d.UseVisualStyleBackColor = false;
+            // 
             // Form_Jeu
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
@@ -252,6 +389,10 @@
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1084, 817);
             ControlBox = false;
+            Controls.Add(button_answer_d);
+            Controls.Add(button_answer_c);
+            Controls.Add(button_answer_b);
+            Controls.Add(button_answer_a);
             Controls.Add(button_valider);
             Controls.Add(label_question);
             Controls.Add(button_question);
@@ -265,6 +406,10 @@
             Controls.Add(button_retour);
             Controls.Add(button_quitter);
             Controls.Add(pictureBox1);
+            Controls.Add(button_bordure_c);
+            Controls.Add(button_bordure_d);
+            Controls.Add(button_bordure_b);
+            Controls.Add(button_bordure_a);
             Font = new Font("Caladea", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "Form_Jeu";
@@ -290,5 +435,13 @@
         private Button button_question;
         private Label label_question;
         private Button button_valider;
+        private Button button_answer_a;
+        private Button button_answer_b;
+        private Button button_answer_c;
+        private Button button_answer_d;
+        private Button button_bordure_a;
+        private Button button_bordure_b;
+        private Button button_bordure_c;
+        private Button button_bordure_d;
     }
 }

@@ -49,7 +49,7 @@ namespace CyberQuizz_App
                     info_resultat = "Bon niveau de vigilance";
                     break;
                 default:
-                    info_resultat = " Excellent agent potentiel";
+                    info_resultat = "Excellent agent potentiel";
                     break;
 
             }
